@@ -14,7 +14,7 @@
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "MIT License",
+  "license": "CC0-1.0 license",
   "icon": "assets/endless_store_mod/icon.png",
 
   "environment": "*",

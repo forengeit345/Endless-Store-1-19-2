@@ -1,6 +1,6 @@
 {
-  "parent":"item/generetad",
+  "parent":"item/generated",
   "textures": {
-    "layer0": "endless_store_mod:item/raw_tanzanite"
+    "layer0": "endless_store_mod:items/raw_tanzanite"
   }
 }
