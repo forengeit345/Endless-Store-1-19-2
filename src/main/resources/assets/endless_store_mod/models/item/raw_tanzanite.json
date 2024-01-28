@@ -1,0 +1,6 @@
+{
+  "parent":"item/generetad",
+  "textures": {
+    "layer0": "endless_store_mod:item/raw_tanzanite"
+  }
+}

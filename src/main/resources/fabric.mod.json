@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "endless_store_mod",
+  "version": "${version}",
+
+  "name": "Endlesss Store Mod",
+  "description": "Надо добавить описание...",
+  "authors": [
+    "forengeit345",
+    "Nirix_"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/endless_store_mod/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.es.endless_store_mod.EndlessStoreMod"
+    ],
+    "client": [
+      "net.es.endless_store_mod.EndlessModClient"
+    ]
+  },
+  "mixins": [
+    "endless_store_mod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric-api": "*",
+    "minecraft": "~1.19.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
