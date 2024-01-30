@@ -1,5 +1,6 @@
 package net.es.endless_store_mod;
 
+import net.es.endless_store_mod.block.ModBlocks;
 import net.es.endless_store_mod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -13,6 +14,6 @@ public class EndlessStoreMod implements ModInitializer {
 	public void onInitialize() {
 
 		ModItems.registerModItems();
-
+		ModBlocks.registerModBlocks();
 	}
 }

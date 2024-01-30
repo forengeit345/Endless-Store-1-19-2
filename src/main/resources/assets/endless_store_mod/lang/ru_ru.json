@@ -1,4 +1,8 @@
 {
   "item.endless_store_mod.raw_tanzanite": "Необработанный Танзанит",
-  "item.endless_store_mod.tanzanite": "Танзанит"
+  "item.endless_store_mod.tanzanite": "Танзанит",
+
+  "block.endless_store_mod.tanzanite_block": "Блок Танзанита",
+
+  "itemGroup.endless_store_mod.tanzanite": "Tanzanite Туториал Вкладка"
 }
