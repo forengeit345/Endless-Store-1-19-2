@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "ndless_store_mod:blocks/concreate_block"
+    "all": "endless_store_mod:blocks/concreate_block"
   }
 }
