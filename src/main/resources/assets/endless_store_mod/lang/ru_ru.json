@@ -2,8 +2,12 @@
   "item.endless_store_mod.raw_tanzanite": "Необработанный Танзанит",
   "item.endless_store_mod.tanzanite": "Танзанит",
 
-  "block.endless_store_mod.concreate_block": "Блок Бетонной Колонны>>",
-  "block.endless_store_mod.laminate_flooring_light_block": "Блок Ламината>",
+  "block.endless_store_mod.laminate_flooring_pink_blockjson": "Блок Белого Ламината",
+  "block.endless_store_mod.laminate_flooring_mangrove_block": "Блок Мангрового Ламината",
+  "block.endless_store_mod.laminate_flooring_light_block_vertical": "Блок Вертикального Ламината",
+  "block.endless_store_mod.concreate_block": "Блок Бетонной Колонны",
+  "block.endless_store_mod.laminate_flooring_dark_block": "Блок Тёмного Ламината",
+  "block.endless_store_mod.laminate_flooring_light_block": "Блок Ламината",
 
-  "itemGroup.endless_store_mod.tanzanite": "Tanzanite Туториал Вкладка"
+  "itemGroup.endless_store_mod.tanzanite": "Endless Store Вкладка"
 }
