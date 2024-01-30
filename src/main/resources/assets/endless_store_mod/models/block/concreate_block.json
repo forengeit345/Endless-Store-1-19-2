@@ -2,8 +2,8 @@
 	"credit": "Discord: nirix_  /   Nirix#1017   ||  Github : https://github.com/Nirix121 ",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "Imported piskel",
-		"particle": "Imported piskel"
+		"0": "endless_store_mod:blocks/concreate_block",
+		"particle": "endless_store_mod:blocks/concreate_block"
 	},
 	"elements": [
 		{
