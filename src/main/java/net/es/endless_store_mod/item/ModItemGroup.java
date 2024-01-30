@@ -7,6 +7,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
-    public static final ItemGroup TANZANITE = FabricItemGroupBuilder.build(
+    public static final ItemGroup ENDLESS_MOD = FabricItemGroupBuilder.build(
             new Identifier(EndlessStoreMod.MOD_ID, "tanzanite"), () -> new ItemStack(ModItems.TANZITE));
 }

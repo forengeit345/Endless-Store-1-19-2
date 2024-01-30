@@ -2,7 +2,8 @@
   "item.endless_store_mod.raw_tanzanite": "Необработанный Танзанит",
   "item.endless_store_mod.tanzanite": "Танзанит",
 
-  "block.endless_store_mod.tanzanite_block": "Блок Танзанита",
+  "block.endless_store_mod.concreate_block": "Блок Бетонной Колонны>>",
+  "block.endless_store_mod.laminate_flooring_light_block": "Блок Ламината>",
 
   "itemGroup.endless_store_mod.tanzanite": "Tanzanite Туториал Вкладка"
 }

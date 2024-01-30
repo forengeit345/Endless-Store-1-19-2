@@ -13,10 +13,10 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
-    public static final Block TANZANITE_BLOCK = registerBlock("tanzanite_block",
-            new Block(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.TANZANITE);
+    public static final Block LAMINATE_FLOORING_DARK_BLOCK = registerBlock("laminate_flooring_light_block",
+            new Block(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block CONCREATE = registerBlock("concreate_block",
-            new Block(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.TANZANITE);
+            new Block(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
 
 
 
