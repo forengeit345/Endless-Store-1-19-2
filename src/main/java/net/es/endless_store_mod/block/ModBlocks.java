@@ -15,6 +15,11 @@ import net.minecraft.util.registry.Registry;
 public class ModBlocks {
     public static final Block TANZANITE_BLOCK = registerBlock("tanzanite_block",
             new Block(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.TANZANITE);
+    public static final Block CONCREATE = registerBlock("concreate_block",
+            new Block(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.TANZANITE);
+
+
+
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
         registerBlockItem(name, block, tab);
         return Registry.register(Registry.BLOCK, new Identifier(EndlessStoreMod.MOD_ID, name), block);
