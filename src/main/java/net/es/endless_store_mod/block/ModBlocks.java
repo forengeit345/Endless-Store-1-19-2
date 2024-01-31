@@ -14,15 +14,15 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
     public static final Block LAMINATE_FLOORING_LIGHT_BLOCK = registerBlock("laminate_flooring_light_block",
-            new Block(AbstractBlock.Settings.of(Material.WOOD).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+            new Block(AbstractBlock.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block LAMINATE_FLOORING_LIGHT_BLOCK_VERTICAL = registerBlock("laminate_flooring_light_block_vertical",
-            new Block(AbstractBlock.Settings.of(Material.WOOD).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+            new Block(AbstractBlock.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block LAMINATE_FLOORING_DARK_BLOCK = registerBlock("laminate_flooring_dark_block",
-            new Block(AbstractBlock.Settings.of(Material.WOOD).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+            new Block(AbstractBlock.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block LAMINATE_FLORING_MANGROVE_BLOCK = registerBlock("laminate_flooring_mangrove_block",
-            new Block(AbstractBlock.Settings.of(Material.WOOD).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+            new Block(AbstractBlock.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block LAMINATE_FLORING_PINK_BLOCK = registerBlock("laminate_flooring_pink_block",
-            new Block(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+            new Block(AbstractBlock.Settings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block CONCREATE = registerBlock("concreate_block",
             new Block(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
 

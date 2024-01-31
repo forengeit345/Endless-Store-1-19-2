@@ -10,7 +10,7 @@ import net.minecraft.util.registry.Registry;
 public class ModItems {
     public static final Item RAW_TANZITE = registerItem("raw_tanzanite",
         new Item(new FabricItemSettings().group(ModItemGroup.ENDLESS_MOD)));
-    public static final Item TANZITE = registerItem("tanzanite",
+    public static final Item CONCREATE_CRUMBS = registerItem("concreate_crumbs",
         new Item(new FabricItemSettings().group(ModItemGroup.ENDLESS_MOD)));
 
     private static Item registerItem(String name, Item item) {
