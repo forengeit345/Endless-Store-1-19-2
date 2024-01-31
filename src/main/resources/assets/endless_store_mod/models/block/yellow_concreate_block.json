@@ -1,0 +1,53 @@
+{
+	"credit": "Discord: nirix_  /   Nirix#1017   ||  Github : https://github.com/Nirix121 ",
+	"textures": {
+		"0": "endless_store_mod:blocks/yellow_concreate_block",
+		"particle": "endless_store_mod:blocks/yellow_concreate_block"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [165.19, -0.82, -43.58],
+			"translation": [0, 2.25, 0],
+			"scale": [0.35, 0.35, 0.35]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [157.26, -3.87, -34.79],
+			"translation": [0, 2.25, 0],
+			"scale": [0.35, 0.35, 0.35]
+		},
+		"firstperson_righthand": {
+			"rotation": [3.19, 47.73, 4.68],
+			"translation": [-0.75, -0.5, 0],
+			"scale": [0.455, 0.455, 0.455]
+		},
+		"firstperson_lefthand": {
+			"rotation": [3.19, 47.73, 4.68],
+			"translation": [-0.75, -0.5, 0],
+			"scale": [0.455, 0.455, 0.455]
+		},
+		"ground": {
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"gui": {
+			"rotation": [28.94, 43.88, 0.36],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"fixed": {
+			"scale": [0.5, 0.5, 0.5]
+		}
+	}
+}
