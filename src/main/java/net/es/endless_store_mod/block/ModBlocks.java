@@ -25,8 +25,9 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block CONCREATE = registerBlock("concreate_block",
             new Block(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
-
-
+    public static final Block YELLOW_CONCREATE = registerBlock("yellow_concreate_block",
+            new Block(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    
 
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
         registerBlockItem(name, block, tab);
