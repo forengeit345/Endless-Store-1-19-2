@@ -1,5 +1,6 @@
 package net.es.endless_store_mod.block;
 
+import net.es.endless_store_mod.block.custom.ShelvesProp;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.es.endless_store_mod.EndlessStoreMod;
 import net.es.endless_store_mod.item.ModItemGroup;
@@ -29,6 +30,8 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block YELLOW_CONCREATE = registerBlock("yellow_concreate_block",
             new Block(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block SHELVES = registerBlock("shelves_block",
+            new ShelvesProp(AbstractBlock.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     
 
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
