@@ -1,5 +1,19 @@
 {
   "variants": {
-    "": {"model": "endless_store_mod:block/laminate_flooring_pink_block"}
+    "facing=north": {
+      "model": "endless_store_mod:block/laminate_flooring_pink_block"
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/laminate_flooring_pink_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/laminate_flooring_pink_block",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/laminate_flooring_pink_block",
+      "y": 90
+    }
   }
 }

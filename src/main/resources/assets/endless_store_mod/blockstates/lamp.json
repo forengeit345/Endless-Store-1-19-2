@@ -1,19 +1,10 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "endless_store_mod:block/lamp"
+    "lit=true": {
+      "model": "endless_store_mod:block/lamp_on"
     },
-    "facing=south": {
-      "model": "endless_store_mod:block/lamp",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "endless_store_mod:block/lamp",
-      "y": 270
-    },
-    "facing=east": {
-      "model": "endless_store_mod:block/lamp",
-      "y": 90
+    "lit=false": {
+      "model": "endless_store_mod:block/lamp_off"
     }
   }
 }

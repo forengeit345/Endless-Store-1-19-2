@@ -35,7 +35,8 @@ public class ModBlocks {
     public static final Block SHELVES = registerBlock("shelves_block",
             new ShelvesProp(AbstractBlock.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block LAMP = registerBlock("lamp",
-            new LampProp(AbstractBlock.Settings.of(Material.WOOD).strength(5f).requiresTool().nonOpaque()), ModItemGroup.ENDLESS_MOD);
+            new LampProp(AbstractBlock.Settings.of(Material.WOOD).strength(5f).requiresTool().nonOpaque()
+                    .luminance(state -> state.get(LampProp.LIT) ? 10 : 0)), ModItemGroup.ENDLESS_MOD);
     
 
     private static Block registerBlock(String name, Block block, ItemGroup tab) {

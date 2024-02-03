@@ -1,5 +1,19 @@
 {
   "variants": {
-    "": {"model": "endless_store_mod:block/floor_tiles_multi_colored_block"}
+    "facing=north": {
+      "model": "endless_store_mod:block/floor_tiles_multi_colored_block"
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/floor_tiles_multi_colored_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/floor_tiles_multi_colored_block",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/floor_tiles_multi_colored_block",
+      "y": 90
+    }
   }
 }
