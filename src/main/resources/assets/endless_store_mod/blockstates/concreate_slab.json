@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "endless_store_mod:block/concreate_slab"
+    },
+    "type=double": {
+      "model": "endless_store_mod:block/concreate_block"
+    },
+    "type=top": {
+      "model": "endless_store_mod:block/concreate_slab_top"
+    }
+  }
+}

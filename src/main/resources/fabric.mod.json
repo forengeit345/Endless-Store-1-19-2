@@ -22,7 +22,7 @@
       "net.es.endless_store_mod.EndlessStoreMod"
     ],
     "client": [
-      "net.es.endless_store_mod.EndlessModClient"
+      "net.es.endless_store_mod.EndlessClientMod"
     ]
   },
   "mixins": [

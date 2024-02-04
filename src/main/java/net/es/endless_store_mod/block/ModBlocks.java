@@ -9,6 +9,7 @@ import net.es.endless_store_mod.item.ModItemGroup;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -30,6 +31,8 @@ public class ModBlocks {
             new RotateBlock(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block CONCREATE = registerBlock("concreate_block",
             new RotateBlock(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block CONCREATE_SLAB = registerBlock("concreate_slab",
+            new SlabBlock(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block YELLOW_CONCREATE = registerBlock("yellow_concreate_block",
             new RotateBlock(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block SHELVES = registerBlock("shelves_block",
