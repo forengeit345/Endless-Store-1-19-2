@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=true": {
+      "model": "endless_store_mod:block/lamp_high_on"
+    },
+    "lit=false": {
+      "model": "endless_store_mod:block/lamp_high_off"
+    }
+  }
+}
