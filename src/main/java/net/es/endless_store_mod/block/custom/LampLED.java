@@ -6,6 +6,7 @@ import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
+import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.BlockMirror;
@@ -15,17 +16,21 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
 
-public class MetalPipe extends HorizontalFacingBlock {
-    public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
+import static net.es.endless_store_mod.block.custom.LampProp.LIT;
 
-    public MetalPipe(Settings settings) {
+public class LampLED extends HorizontalFacingBlock {
+    public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
+    public static final BooleanProperty LIT = BooleanProperty.of("lit");
+    public LampLED(Settings settings) {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = Block.createCuboidShape(4.5, 4, 0, 11.5, 11, 16);
-    private static VoxelShape SHAPE_S = Block.createCuboidShape(4.5, 4, 0, 11.5, 11, 16);
-    private static VoxelShape SHAPE_W = Block.createCuboidShape(0, 4, 4.5, 16, 11, 11.5);
-    private static VoxelShape SHAPE_E = Block.createCuboidShape(0, 4, 4.5, 16, 11, 11.5);
+
+    private static VoxelShape SHAPE_N = Block.createCuboidShape(7.25, 15.25, 2.5, 8.75, 16, 13.5);
+    private static VoxelShape SHAPE_S = Block.createCuboidShape(7.25, 15.25, 2.5, 8.75, 16, 13.5);
+    private static VoxelShape SHAPE_W = Block.createCuboidShape(2.5, 15.25, 7.25, 13.5, 16, 8.75);
+    private static VoxelShape SHAPE_E = Block.createCuboidShape(2.5, 15.25, 7.25, 13.5, 16, 8.75);
+
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {
@@ -55,6 +60,7 @@ public class MetalPipe extends HorizontalFacingBlock {
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+        builder.add(LIT);
         builder.add(FACING);
     }
 }

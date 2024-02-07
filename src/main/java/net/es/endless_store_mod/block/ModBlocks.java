@@ -34,7 +34,9 @@ public class ModBlocks {
     public static final Block YELLOW_CONCREATE = registerBlock("yellow_concreate_block",
             new RotateBlock(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block METAL_PIPE = registerBlock("metal_pipe",
-            new MetalPipe(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+            new MetalPipe(AbstractBlock.Settings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block METAL_CORNER_PIPE = registerBlock("metal_corner_pipe",
+            new MetalCornerPipe(AbstractBlock.Settings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block SHELVES = registerBlock("shelves_block",
             new ShelvesProp(AbstractBlock.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block LAMP = registerBlock("lamp",
@@ -42,7 +44,10 @@ public class ModBlocks {
                     .luminance(state -> state.get(LampProp.LIT) ? 10 : 0)), ModItemGroup.ENDLESS_MOD);
     public static final Block LAMP_HIGH = registerBlock("lamp_high",
             new LampHighProp(AbstractBlock.Settings.of(Material.WOOD).strength(5f).requiresTool().nonOpaque()
-                    .luminance(state -> state.get(LampProp.LIT) ? 15 : 0)), ModItemGroup.ENDLESS_MOD);
+                    .luminance(state -> state.get(LampProp.LIT) ? 14 : 0)), ModItemGroup.ENDLESS_MOD);
+    public static final Block LAMP_LED = registerBlock("lamp_led",
+            new LampLED(AbstractBlock.Settings.of(Material.WOOD).strength(5f).requiresTool().nonOpaque()
+                    .luminance(state -> state.get(LampProp.LIT) ? 14 : 0)), ModItemGroup.ENDLESS_MOD);
     
 
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
