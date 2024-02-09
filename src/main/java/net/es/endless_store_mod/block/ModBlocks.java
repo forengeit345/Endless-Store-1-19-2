@@ -39,6 +39,8 @@ public class ModBlocks {
             new MetalCornerPipe(AbstractBlock.Settings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block SHELVES = registerBlock("shelves_block",
             new ShelvesProp(AbstractBlock.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block BASEBOARD = registerBlock("baseboard",
+            new Baseboard(AbstractBlock.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block LAMP = registerBlock("lamp",
             new LampProp(AbstractBlock.Settings.of(Material.WOOD).strength(5f).requiresTool().nonOpaque()
                     .luminance(state -> state.get(LampProp.LIT) ? 10 : 0)), ModItemGroup.ENDLESS_MOD);
