@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "endless_store_mod:block/baseboard_corner"
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/baseboard_corner",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/baseboard_corner",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/baseboard_corner",
+      "y": 90
+    }
+  }
+}

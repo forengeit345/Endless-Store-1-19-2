@@ -27,6 +27,8 @@ public class ModBlocks {
             new RotateBlock(AbstractBlock.Settings.of(Material.STONE).strength(5f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block FLOOR_TILES_MULTI_COLORED_BLOCK = registerBlock("floor_tiles_multi_colored_block",
             new RotateBlock(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block PLITKA_WATER_BLOCK = registerBlock("plitka_water_block",
+            new RotateBlock(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block CONCREATE = registerBlock("concreate_block",
             new RotateBlock(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block CONCREATE_SLAB = registerBlock("concreate_slab",
@@ -41,6 +43,10 @@ public class ModBlocks {
             new ShelvesProp(AbstractBlock.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block BASEBOARD = registerBlock("baseboard",
             new Baseboard(AbstractBlock.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block BASEBOARD_CORNER = registerBlock("baseboard_corner",
+            new BaseboardCorner(AbstractBlock.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block GRID_VERTICAL = registerBlock("grid_vertical",
+            new GridPropVertical(AbstractBlock.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block LAMP = registerBlock("lamp",
             new LampProp(AbstractBlock.Settings.of(Material.WOOD).strength(5f).requiresTool().nonOpaque()
                     .luminance(state -> state.get(LampProp.LIT) ? 10 : 0)), ModItemGroup.ENDLESS_MOD);

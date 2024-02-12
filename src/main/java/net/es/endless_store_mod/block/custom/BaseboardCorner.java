@@ -4,50 +4,52 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.ShapeContext;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
-import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
-import net.minecraft.util.ActionResult;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
-import net.minecraft.util.Hand;
-import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
-import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class LampHighProp extends HorizontalFacingBlock {
+public class BaseboardCorner extends HorizontalFacingBlock {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
-    public static final BooleanProperty LIT = BooleanProperty.of("lit");
-    public LampHighProp(Settings settings) {
+
+    public BaseboardCorner(Settings settings) {
         super(settings);
     }
 
-    @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos,
-                              PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if (!world.isClient() && hand == Hand.MAIN_HAND) {
-            world.setBlockState(pos, state.cycle(LIT));
-        }
-        return super.onUse(state, world, pos, player, hand, hit);
-    }
-
-    private static final VoxelShape SHAPE = VoxelShapes.union(
-            Block.createCuboidShape(4, 0, 4, 12, 1.25, 12),
-            Block.createCuboidShape(7.5, 0, 7.5, 8.75, 20, 8.75),
-            Block.createCuboidShape(4.5, 20, 4.5, 11.5, 27.25, 11.5)
+    private static VoxelShape SHAPE_N = VoxelShapes.union(
+            Block.createCuboidShape(0, 0, 0, 0.75, 1.5, 16),
+            Block.createCuboidShape(0.75, 0, 0, 16, 1.5, 0.75)
     );
-
+    private static VoxelShape SHAPE_E = VoxelShapes.union(
+            Block.createCuboidShape(0, 0, 0, 16, 1.5, 0.75),
+            Block.createCuboidShape(15.25, 0, 0.75, 16, 1.5, 16)
+    );
+    private static VoxelShape SHAPE_S = VoxelShapes.union(
+            Block.createCuboidShape(15.25, 0, 0, 16, 1.5, 16),
+            Block.createCuboidShape(0, 0, 15.25, 15.25, 1.5, 16)
+    );
+    private static VoxelShape SHAPE_W = VoxelShapes.union(
+            Block.createCuboidShape(0, 0, 15.25, 16, 1.5, 16),
+            Block.createCuboidShape(0, 0, 0, 0.75, 1.5, 15.25)
+    );
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return SHAPE;
+        return switch (state.get(FACING)) {
+            case NORTH -> SHAPE_N;
+            case SOUTH -> SHAPE_S;
+            case WEST -> SHAPE_W;
+            case EAST -> SHAPE_E;
+            default -> SHAPE_N;
+        };
     }
+
     @Nullable
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
@@ -66,7 +68,6 @@ public class LampHighProp extends HorizontalFacingBlock {
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-    builder.add(FACING);
-    builder.add(LIT);
+        builder.add(FACING);
     }
 }
