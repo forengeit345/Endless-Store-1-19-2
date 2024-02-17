@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "endless_store_mod:blocks/patterned_carpet"
+  }
+}

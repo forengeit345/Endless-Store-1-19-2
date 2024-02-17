@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "endless_store_mod:block/fire_crane",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/fire_crane"
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/fire_crane",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/fire_crane",
+      "y": 270
+    }
+  }
+}

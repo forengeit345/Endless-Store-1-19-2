@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "endless_store_mod:block/outdoor_sign"
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/outdoor_sign",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/outdoor_sign",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/outdoor_sign",
+      "y": 90
+    }
+  }
+}

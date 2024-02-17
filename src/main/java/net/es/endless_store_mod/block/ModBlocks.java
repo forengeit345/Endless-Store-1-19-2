@@ -4,10 +4,7 @@ import net.es.endless_store_mod.block.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.es.endless_store_mod.EndlessStoreMod;
 import net.es.endless_store_mod.item.ModItemGroup;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
-import net.minecraft.block.SlabBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -35,6 +32,14 @@ public class ModBlocks {
             new SlabBlock(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block YELLOW_CONCREATE = registerBlock("yellow_concreate_block",
             new RotateBlock(AbstractBlock.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block WALLPAPER_YELLOW = registerBlock("wallpaper_yellow",
+            new RotateBlock(AbstractBlock.Settings.of(Material.WOOD).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block WALLPAPER_WHITE = registerBlock("wallpaper_white",
+            new RotateBlock(AbstractBlock.Settings.of(Material.WOOD).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block WALLPAPER_BLUE = registerBlock("wallpaper_blue",
+            new RotateBlock(AbstractBlock.Settings.of(Material.WOOD).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block PATTERNED_CARPET= registerBlock("patterned_carpet",
+            new CarpetCustom(AbstractBlock.Settings.of(Material.WOOL).strength(6f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block METAL_PIPE = registerBlock("metal_pipe",
             new MetalPipe(AbstractBlock.Settings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block METAL_CORNER_PIPE = registerBlock("metal_corner_pipe",
@@ -47,6 +52,14 @@ public class ModBlocks {
             new BaseboardCorner(AbstractBlock.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block GRID_VERTICAL = registerBlock("grid_vertical",
             new GridPropVertical(AbstractBlock.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block PLUSH_MOUSE_GRAF = registerBlock("plush_mouse_graf",
+            new PlushMouseGraf(AbstractBlock.Settings.of(Material.WOOL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block OUTDOOR_SIGN = registerBlock("outdoor_sign",
+            new OutdoorSign(AbstractBlock.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block FIRE_CRANE = registerBlock("fire_crane",
+            new FireCrane(AbstractBlock.Settings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block KETTLE = registerBlock("kettle",
+            new Kettle(AbstractBlock.Settings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block LAMP = registerBlock("lamp",
             new LampProp(AbstractBlock.Settings.of(Material.WOOD).strength(5f).requiresTool().nonOpaque()
                     .luminance(state -> state.get(LampProp.LIT) ? 10 : 0)), ModItemGroup.ENDLESS_MOD);

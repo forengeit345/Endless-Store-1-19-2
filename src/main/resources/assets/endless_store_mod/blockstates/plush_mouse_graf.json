@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "endless_store_mod:block/plush_mouse_graf"
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/plush_mouse_graf",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/plush_mouse_graf",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/plush_mouse_graf",
+      "y": 90
+    }
+  }
+}

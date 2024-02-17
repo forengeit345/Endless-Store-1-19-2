@@ -4,33 +4,38 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.ShapeContext;
-import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
-import net.minecraft.tag.FluidTags;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
-public class ShelvesProp extends HorizontalFacingBlock {
+
+public class Kettle extends HorizontalFacingBlock {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
-    public ShelvesProp(Settings settings) {
+    public Kettle(Settings settings) {
         super(settings);
     }
 
-    private static VoxelShape SHAPE = Block.createCuboidShape(0, 0, 0, 16, 15, 16);
-
+    private static VoxelShape SHAPE_N = Block.createCuboidShape(4.1, 0, 2.1, 11.9, 10.4, 14.1);
+    private static VoxelShape SHAPE_S = Block.createCuboidShape(4.1, 0, 2.1, 11.9, 10.4, 14.1);
+    private static VoxelShape SHAPE_W = Block.createCuboidShape(2.1, 0, 4.1, 14.1, 10.4, 11.9);
+    private static VoxelShape SHAPE_E = Block.createCuboidShape(2.1, 0, 4.1, 14.1, 10.4, 11.9);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return SHAPE;
+        return switch (state.get(FACING)) {
+            case NORTH -> SHAPE_N;
+            case SOUTH -> SHAPE_S;
+            case WEST -> SHAPE_W;
+            case EAST -> SHAPE_E;
+            default -> SHAPE_N;
+        };
     }
-
-
 
     @Nullable
     @Override
