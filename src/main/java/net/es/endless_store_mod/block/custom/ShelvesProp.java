@@ -23,14 +23,16 @@ public class ShelvesProp extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE = Block.createCuboidShape(0, 0, 0, 16, 15, 16);
+    private static VoxelShape SHAPE = Block.createCuboidShape(0, 0, 0, 16, 16, 16).simplify();
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return SHAPE;
     }
 
-
+    public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {
+        return false;
+    }
 
     @Nullable
     @Override

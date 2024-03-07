@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "endless_store_mod:block/wall_clock",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/wall_clock"
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/wall_clock",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/wall_clock",
+      "y": 270
+    }
+  }
+}

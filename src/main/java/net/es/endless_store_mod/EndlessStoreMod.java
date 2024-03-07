@@ -12,7 +12,6 @@ public class EndlessStoreMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}
