@@ -64,6 +64,8 @@ public class ModBlocks {
             new RotateBlock(Block.Settings.of(Material.WOOD).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block WALLPAPER_BLUE = registerBlock("wallpaper_blue",
             new RotateBlock(Block.Settings.of(Material.WOOD).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block METAL_GARAGE_DOOR = registerBlock("metal_garage_door",
+            new RotateBlock(Block.Settings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block PATTERNED_CARPET= registerBlock("patterned_carpet",
             new CarpetCustom(Block.Settings.of(Material.WOOL).strength(6f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block METAL_PIPE = registerBlock("metal_pipe",
@@ -90,6 +92,22 @@ public class ModBlocks {
             new WallClock(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block PALLET = registerBlock("pallet",
             new Pallet(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), ModItemGroup.ENDLESS_MOD);
+    public static final Block FIRE_DETECTER = registerBlock("fire_detecter",
+            new FireDetecter(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block WALL_MAP = registerBlock("wall_map",
+            new WallMap(Block.Settings.of(Material.DECORATION).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block CARGO_TROLLEY = registerBlock("cargo_trolley",
+            new CargoTrolley(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block CARGO_TROLLEY_LONG_TWO_HANDLES = registerBlock("cargo_trolley_long_two_handles",
+            new CargoTrolleyLongTwoHandles(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), ModItemGroup.ENDLESS_MOD);
+    public static final Block BOOK_VARIANT_ONE = registerBlock("book_variant_one",
+            new BookVariantOne(Block.Settings.of(Material.DECORATION).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block BOOK_VARIANT_TWO = registerBlock("book_variant_two",
+            new BookVariantTwo(Block.Settings.of(Material.DECORATION).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block BOOK_VARIANT_THREE = registerBlock("book_variant_three",
+            new BookVariantThree(Block.Settings.of(Material.DECORATION).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block ARMCHAIR = registerBlock("armchair",
+            new Armchair(Block.Settings.of(Material.WOOL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block LAMP = registerBlock("lamp",
             new LampProp(Block.Settings.of(Material.WOOD).strength(5f).requiresTool().nonOpaque()
                     .luminance(state -> state.get(LampProp.LIT) ? 10 : 0)), ModItemGroup.ENDLESS_MOD);

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "endless_store_mod:block/fire_detecter"
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/fire_detecter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/fire_detecter",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/fire_detecter",
+      "y": 90
+    }
+  }
+}

@@ -25,6 +25,15 @@
   "block.endless_store_mod.white_brick_stairs_alternative": "Белые кирпичные ступеньки",
   "block.endless_store_mod.laminate_light": "Светлый ламинат",
   "block.endless_store_mod.laminate_brown": "Коричневый ламинат",
+  "block.endless_store_mod.metal_garage_door": "Металлическая гаражная дверь",
+  "block.endless_store_mod.fire_detecter": "Датчик дыма",
+  "block.endless_store_mod.wall_map": "План магазина",
+  "block.endless_store_mod.cargo_trolley": "Тележка",
+  "block.endless_store_mod.cargo_trolley_long_two_handles": "Тележка с двумя ручками",
+  "block.endless_store_mod.book_variant_one": "Одинокая книга",
+  "block.endless_store_mod.book_variant_two": "Парная книга",
+  "block.endless_store_mod.book_variant_three": "Стопка книг",
+  "block.endless_store_mod.armchair": "Кресло",
 
 
   "block.endless_store_mod.metal_pipe": "Металическая труба",
