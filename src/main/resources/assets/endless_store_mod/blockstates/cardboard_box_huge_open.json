@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "endless_store_mod:block/cardboard_box_huge_open",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/cardboard_box_huge_open"
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/cardboard_box_huge_open",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/cardboard_box_huge_open",
+      "y": 270
+    }
+  }
+}

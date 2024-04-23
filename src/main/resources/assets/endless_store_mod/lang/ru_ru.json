@@ -34,6 +34,17 @@
   "block.endless_store_mod.book_variant_two": "Парная книга",
   "block.endless_store_mod.book_variant_three": "Стопка книг",
   "block.endless_store_mod.armchair": "Кресло",
+  "block.endless_store_mod.wardrobe": "Шкаф",
+  "block.endless_store_mod.cardboard_box": "Картонная коробка",
+  "block.endless_store_mod.cardboard_box_open": "Открытая картонная коробка",
+  "block.endless_store_mod.cardboard_box_middle": "Средняя картонная коробка",
+  "block.endless_store_mod.cardboard_box_middle_open": "Открытая средняя картонная коробка",
+  "block.endless_store_mod.cardboard_box_large": "Большая картонная коробка",
+  "block.endless_store_mod.cardboard_box_large_open": "Открытая большая картонная коробка",
+  "block.endless_store_mod.cardboard_box_huge": "Огромная картонная коробка",
+  "block.endless_store_mod.cardboard_box_huge_open": "Открытая огромная картонная коробка",
+  "block.endless_store_mod.trash_can": "Урна",
+  "block.endless_store_mod.plate": "Тарелка",
 
 
   "block.endless_store_mod.metal_pipe": "Металическая труба",

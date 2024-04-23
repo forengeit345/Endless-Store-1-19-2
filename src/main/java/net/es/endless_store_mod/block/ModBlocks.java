@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
+    // Просто блоки
     public static final Block LAMINATE_FLOORING_LIGHT_BLOCK = registerBlock("laminate_flooring_light_block",
             new RotateBlock(Block.Settings.of(Material.WOOD).strength(5f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block LAMINATE_FLOORING_LIGHT_BLOCK_VERTICAL = registerBlock("laminate_flooring_light_block_vertical",
@@ -74,6 +75,7 @@ public class ModBlocks {
             new MetalCornerPipe(Block.Settings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block SHELVES = registerBlock("shelves_block",
             new ShelvesProp(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), ModItemGroup.ENDLESS_MOD);
+    // Блоки с кастомным шейпом
     public static final Block BASEBOARD = registerBlock("baseboard",
             new Baseboard(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block BASEBOARD_CORNER = registerBlock("baseboard_corner",
@@ -108,6 +110,30 @@ public class ModBlocks {
             new BookVariantThree(Block.Settings.of(Material.DECORATION).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block ARMCHAIR = registerBlock("armchair",
             new Armchair(Block.Settings.of(Material.WOOL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block WARDROBE = registerBlock("wardrobe",
+            new Wardrobe(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block CARDBOARD_BOX = registerBlock("cardboard_box",
+            new CardboardBox(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block CARDBOARD_BOX_OPEN = registerBlock("cardboard_box_open",
+            new CardboardBox(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block CARDBOARD_BOX_MIDDLE = registerBlock("cardboard_box_middle",
+            new CardboardBoxMiddle(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block CARDBOARD_BOX_MIDDLE_OPEN = registerBlock("cardboard_box_middle_open",
+            new CardboardBoxMiddle(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block CARDBOARD_BOX_LARGE = registerBlock("cardboard_box_large",
+            new CardboardBoxLarge(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block CARDBOARD_BOX_LARGE_OPEN = registerBlock("cardboard_box_large_open",
+            new CardboardBoxLarge(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block CARDBOARD_BOX_HUGE = registerBlock("cardboard_box_huge",
+            new CardboardBoxHuge(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), ModItemGroup.ENDLESS_MOD);
+    public static final Block CARDBOARD_BOX_HUGE_OPEN = registerBlock("cardboard_box_huge_open",
+            new CardboardBoxHuge(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), ModItemGroup.ENDLESS_MOD);
+    public static final Block TRASH_CAN = registerBlock("trash_can",
+            new TrashCan(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block PLATE= registerBlock("plate",
+            new Plate(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+
+    // Светяшки и всё что даёт хоть какой-то свет
     public static final Block LAMP = registerBlock("lamp",
             new LampProp(Block.Settings.of(Material.WOOD).strength(5f).requiresTool().nonOpaque()
                     .luminance(state -> state.get(LampProp.LIT) ? 10 : 0)), ModItemGroup.ENDLESS_MOD);
