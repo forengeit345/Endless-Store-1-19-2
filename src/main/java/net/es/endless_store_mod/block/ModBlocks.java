@@ -109,7 +109,7 @@ public class ModBlocks {
     public static final Block BOOK_VARIANT_THREE = registerBlock("book_variant_three",
             new BookVariantThree(Block.Settings.of(Material.DECORATION).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block ARMCHAIR = registerBlock("armchair",
-            new Armchair(Block.Settings.of(Material.WOOL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+            new Armchair(Block.Settings.of(Material.WOOL).strength(2f).requiresTool().nonOpaque()), ModItemGroup.ENDLESS_MOD);
     public static final Block WARDROBE = registerBlock("wardrobe",
             new Wardrobe(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block CARDBOARD_BOX = registerBlock("cardboard_box",
@@ -130,8 +130,16 @@ public class ModBlocks {
             new CardboardBoxHuge(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), ModItemGroup.ENDLESS_MOD);
     public static final Block TRASH_CAN = registerBlock("trash_can",
             new TrashCan(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
-    public static final Block PLATE= registerBlock("plate",
+    public static final Block PLATE = registerBlock("plate",
             new Plate(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block FUSE_BOX = registerBlock("fuse_box",
+            new FuseBox(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block FUSE_BOX_LARGE = registerBlock("fuse_box_large",
+            new FuseBoxLarge(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block SAFE = registerBlock("safe",
+            new Safe(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block TOOLBOX = registerBlock("toolbox",
+            new Toolbox(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
 
     // Светяшки и всё что даёт хоть какой-то свет
     public static final Block LAMP = registerBlock("lamp",

@@ -1,8 +1,10 @@
 package net.es.endless_store_mod.item;
 
 import net.es.endless_store_mod.EndlessStoreMod;
+import net.es.endless_store_mod.entity.ModEntities;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -12,6 +14,9 @@ public class ModItems {
         new Item(new FabricItemSettings().group(ModItemGroup.ENDLESS_MOD)));
     public static final Item CONCREATE_CRUMBS = registerItem("concreate_crumbs",
         new Item(new FabricItemSettings().group(ModItemGroup.ENDLESS_MOD)));
+    public static final Item EMPLOYEE_SPAWN_EGG = registerItem("employee_spawn_egg",
+            new SpawnEggItem(ModEntities.EMPLOYEE,0x23b341, 0x12732e,
+                    new FabricItemSettings().group(ModItemGroup.ENDLESS_MOD)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(EndlessStoreMod.MOD_ID, name), item);

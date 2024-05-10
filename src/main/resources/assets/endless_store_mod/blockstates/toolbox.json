@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "endless_store_mod:block/toolbox",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/toolbox"
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/toolbox",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/toolbox",
+      "y": 270
+    }
+  }
+}
