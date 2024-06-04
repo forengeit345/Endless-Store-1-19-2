@@ -1,7 +1,9 @@
 package net.es.endless_store_mod.entity.custom;
 
 import net.minecraft.block.BlockState;
+import net.minecraft.entity.EntityData;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.ai.NavigationConditions;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.ai.pathing.MobNavigation;
@@ -9,13 +11,18 @@ import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.HostileEntity;
+import net.minecraft.entity.mob.ZombieEntity;
 import net.minecraft.entity.passive.MerchantEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.Difficulty;
+import net.minecraft.world.LocalDifficulty;
+import net.minecraft.world.ServerWorldAccess;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
 import software.bernie.geckolib3.core.builder.AnimationBuilder;
@@ -133,5 +140,27 @@ public class EmployeeEntity extends HostileEntity implements IAnimatable {
     @Override
     protected void playStepSound(BlockPos pos, BlockState state) {
         this.playSound(SoundEvents.ENTITY_ZOMBIE_STEP, 0.15f, 1.0f);
+    }
+    public void writeCustomDataToNbt(NbtCompound nbt) {
+        super.writeCustomDataToNbt(nbt);
+        nbt.putBoolean("CanBreakDoors", this.canBreakDoors());
+    }
+    public void readCustomDataFromNbt(NbtCompound nbt) {
+        super.readCustomDataFromNbt(nbt);
+        this.setCanBreakDoors(nbt.getBoolean("CanBreakDoors"));
+    }
+    @Nullable
+    public EntityData initialize(ServerWorldAccess world, LocalDifficulty difficulty, SpawnReason spawnReason, @Nullable EntityData entityData, @Nullable NbtCompound entityNbt) {
+        float f = difficulty.getClampedLocalDifficulty();
+        this.setCanPickUpLoot(random.nextFloat() < 0.55F * f);
+
+        if (entityData instanceof ZombieEntity.ZombieData zombieData) {
+            this.setCanBreakDoors(this.shouldBreakDoors() && random.nextFloat() < f * 0.1F);
+            this.initEquipment(random, difficulty);
+            this.updateEnchantments(random, difficulty);
+        }
+
+
+        return (EntityData)entityData;
     }
 }

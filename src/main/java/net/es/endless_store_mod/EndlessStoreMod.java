@@ -1,5 +1,6 @@
 package net.es.endless_store_mod;
 
+import net.es.endless_store_mod.world.dimension.EndlessStoreDimension;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.es.endless_store_mod.block.ModBlocks;
 import net.es.endless_store_mod.entity.ModEntities;
@@ -22,5 +23,7 @@ public class EndlessStoreMod implements ModInitializer {
 		GeckoLib.initialize();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.EMPLOYEE, EmployeeEntity.setAttributes());
+
+		EndlessStoreDimension.register();
 	}
 }
