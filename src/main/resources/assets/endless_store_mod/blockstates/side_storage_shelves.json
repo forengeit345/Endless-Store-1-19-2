@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "endless_store_mod:block/side_storage_shelves",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/side_storage_shelves"
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/side_storage_shelves",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/side_storage_shelves",
+      "y": 270
+    }
+  }
+}

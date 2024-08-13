@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "endless_store_mod:block/coil_wires",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/coil_wires"
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/coil_wires",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/coil_wires",
+      "y": 270
+    }
+  }
+}

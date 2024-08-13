@@ -7,10 +7,12 @@ import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.World;
 import net.minecraft.world.dimension.DimensionType;
 
+
 public class EndlessStoreDimension {
     public static final RegistryKey<World> ESDIM_DIMENSION_KEY = RegistryKey.of(Registry.WORLD_KEY,
             new Identifier(EndlessStoreMod.MOD_ID, "esdim"));
     public static final RegistryKey<DimensionType> ESDIM_TYPE_KEY = RegistryKey.of(Registry.DIMENSION_TYPE_KEY, ESDIM_DIMENSION_KEY.getValue());
+
 
 
     public static void register(){

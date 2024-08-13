@@ -21,7 +21,7 @@ public class ModBlocks {
             new RotateBlock(Block.Settings.of(Material.WOOD).strength(5f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block LAMINATE_FLOORING_MANGROVE_BLOCK = registerBlock("laminate_flooring_mangrove_block",
             new RotateBlock(Block.Settings.of(Material.WOOD).strength(5f).requiresTool()), ModItemGroup.ENDLESS_MOD);
-    public static final Block LAMINATE_FLOORING_PINK_BLOCK = registerBlock("laminate_flooring_pink_block",
+    public static final Block LAMINATE_FLOORING_WHITE_BLOCK = registerBlock("laminate_flooring_white_block",
             new RotateBlock(Block.Settings.of(Material.STONE).strength(5f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block FLOOR_TILES_MULTI_COLORED_BLOCK = registerBlock("floor_tiles_multi_colored_block",
             new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
@@ -55,9 +55,9 @@ public class ModBlocks {
             new SlabBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block WHITE_BRICK_STAIRS_ALTERNATIVE = registerBlock("white_brick_stairs_alternative",
             new ModStairsBlock(ModBlocks.WHITE_BRICK_BLOCK_ALTERNATIVE.getDefaultState(), Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
-    public static final Block LAMINATE_LIGHT = registerBlock("laminate_light",
+    public static final Block LINOLEUM_LIGHT = registerBlock("linoleum_light",
             new RotateBlock(Block.Settings.of(Material.WOOD).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
-    public static final Block LAMINATE_BROWN = registerBlock("laminate_brown",
+    public static final Block LINOLEUM_BROWN = registerBlock("linoleum_brown",
             new RotateBlock(Block.Settings.of(Material.WOOD).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block WALLPAPER_YELLOW = registerBlock("wallpaper_yellow",
             new RotateBlock(Block.Settings.of(Material.WOOD).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
@@ -140,6 +140,18 @@ public class ModBlocks {
             new Safe(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block TOOLBOX = registerBlock("toolbox",
             new Toolbox(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block COIL_WIRES = registerBlock("coil_wires",
+            new CoilWires(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block WOODEN_CHAIR = registerBlock("wooden_chair",
+            new WoodenChair(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block WOODEN_TABLE = registerBlock("wooden_table",
+            new WoodenTable(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), ModItemGroup.ENDLESS_MOD);
+    public static final Block STORAGE_SHELVES = registerBlock("storage_shelves",
+            new StorageShelves(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), ModItemGroup.ENDLESS_MOD);
+    public static final Block SIDE_STORAGE_SHELVES = registerBlock("side_storage_shelves",
+            new SideStorageShelves(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), ModItemGroup.ENDLESS_MOD);
+    public static final Block SIDE_BEAMS = registerBlock("side_beams",
+            new SideBeams(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), ModItemGroup.ENDLESS_MOD);
 
     // Светяшки и всё что даёт хоть какой-то свет
     public static final Block LAMP = registerBlock("lamp",
