@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/slab",
   "textures": {
-    "bottom": "endless_store_mod:blocks/dark_concreate_block",
-    "top": "endless_store_mod:blocks/dark_concreate_block",
-    "side": "endless_store_mod:blocks/dark_concreate_block"
+    "bottom": "endless_store_mod:blocks/dark_concreate",
+    "top": "endless_store_mod:blocks/dark_concreate",
+    "side": "endless_store_mod:blocks/dark_concreate"
   }
 }

@@ -13,23 +13,29 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
     // Просто блоки
-    public static final Block LAMINATE_FLOORING_LIGHT_BLOCK = registerBlock("laminate_flooring_light_block",
+    public static final Block LAMINATE_FLOORING_LIGHT = registerBlock("laminate_flooring_light",
             new RotateBlock(Block.Settings.of(Material.WOOD).strength(5f).requiresTool()), ModItemGroup.ENDLESS_MOD);
-    public static final Block LAMINATE_FLOORING_LIGHT_BLOCK_VERTICAL = registerBlock("laminate_flooring_light_block_vertical",
+    public static final Block LAMINATE_FLOORING_LIGHT_VERTICAL = registerBlock("laminate_flooring_light_vertical",
             new RotateBlock(Block.Settings.of(Material.WOOD).strength(5f).requiresTool()), ModItemGroup.ENDLESS_MOD);
-    public static final Block LAMINATE_FLOORING_DARK_BLOCK = registerBlock("laminate_flooring_dark_block",
+    public static final Block LAMINATE_FLOORING_DARK = registerBlock("laminate_flooring_dark",
             new RotateBlock(Block.Settings.of(Material.WOOD).strength(5f).requiresTool()), ModItemGroup.ENDLESS_MOD);
-    public static final Block LAMINATE_FLOORING_MANGROVE_BLOCK = registerBlock("laminate_flooring_mangrove_block",
+    public static final Block LAMINATE_FLOORING_MANGROVE = registerBlock("laminate_flooring_mangrove",
             new RotateBlock(Block.Settings.of(Material.WOOD).strength(5f).requiresTool()), ModItemGroup.ENDLESS_MOD);
-    public static final Block LAMINATE_FLOORING_WHITE_BLOCK = registerBlock("laminate_flooring_white_block",
+    public static final Block LAMINATE_FLOORING_WHITE = registerBlock("laminate_flooring_white",
             new RotateBlock(Block.Settings.of(Material.STONE).strength(5f).requiresTool()), ModItemGroup.ENDLESS_MOD);
-    public static final Block FLOOR_TILES_MULTI_COLORED_BLOCK = registerBlock("floor_tiles_multi_colored_block",
+    public static final Block FLOOR_TILES_MULTI_COLORED = registerBlock("floor_tiles_multi_colored",
             new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
-    public static final Block PLITKA_WATER_BLOCK = registerBlock("plitka_water_block",
+    public static final Block PLITKA_WATER = registerBlock("plitka_water",
             new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
-    public static final Block CONCREATE = registerBlock("concreate_block",
+    public static final Block CONCREATE = registerBlock("concreate",
             new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
-    public static final Block DARK_CONCREATE = registerBlock("dark_concreate_block",
+    public static final Block MOSSY_CONCREATE = registerBlock("mossy_concreate",
+            new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block OVERGROWN_CONCREATE = registerBlock("overgrown_concreate",
+            new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block CRACKED_CONCREATE = registerBlock("cracked_concreate",
+            new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+    public static final Block DARK_CONCREATE = registerBlock("dark_concreate",
             new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block CONCREATE_SLAB = registerBlock("concreate_slab",
             new SlabBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
@@ -39,22 +45,22 @@ public class ModBlocks {
             new SlabBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block DARK_CONCREATE_STAIRS = registerBlock("dark_concreate_stairs",
             new ModStairsBlock(ModBlocks.DARK_CONCREATE.getDefaultState(), Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
-    public static final Block YELLOW_CONCREATE = registerBlock("yellow_concreate_block",
+    public static final Block YELLOW_CONCREATE = registerBlock("yellow_concreate",
             new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
-    public static final Block ORANGE_GRANIT_BLOCK = registerBlock("orange_granit_block",
+    public static final Block ORANGE_GRANIT = registerBlock("orange_granit",
             new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
-    public static final Block WHITE_BRICK_BLOCK = registerBlock("white_brick_block",
+    public static final Block WHITE_BRICK = registerBlock("white_brick",
             new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
-    public static final Block WHITE_BRICK_BLOCK_ALTERNATIVE = registerBlock("white_brick_block_alternative",
+    public static final Block WHITE_BRICK_ALTERNATIVE = registerBlock("white_brick_alternative",
             new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block WHITE_BRICK_SLAB = registerBlock("white_brick_slab",
             new SlabBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block WHITE_BRICK_STAIRS_ES = registerBlock("white_brick_stairs_es",
-            new ModStairsBlock(ModBlocks.WHITE_BRICK_BLOCK.getDefaultState(), Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+            new ModStairsBlock(ModBlocks.WHITE_BRICK.getDefaultState(), Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block WHITE_BRICK_SLAB_ALTERNATIVE = registerBlock("white_brick_slab_alternative",
             new SlabBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block WHITE_BRICK_STAIRS_ALTERNATIVE = registerBlock("white_brick_stairs_alternative",
-            new ModStairsBlock(ModBlocks.WHITE_BRICK_BLOCK_ALTERNATIVE.getDefaultState(), Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
+            new ModStairsBlock(ModBlocks.WHITE_BRICK_ALTERNATIVE.getDefaultState(), Block.Settings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block LINOLEUM_LIGHT = registerBlock("linoleum_light",
             new RotateBlock(Block.Settings.of(Material.WOOD).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block LINOLEUM_BROWN = registerBlock("linoleum_brown",
@@ -73,7 +79,7 @@ public class ModBlocks {
             new MetalPipe(Block.Settings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
     public static final Block METAL_CORNER_PIPE = registerBlock("metal_corner_pipe",
             new MetalCornerPipe(Block.Settings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.ENDLESS_MOD);
-    public static final Block SHELVES = registerBlock("shelves_block",
+    public static final Block SHELVES = registerBlock("shelves",
             new ShelvesProp(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), ModItemGroup.ENDLESS_MOD);
     // Блоки с кастомным шейпом
     public static final Block BASEBOARD = registerBlock("baseboard",

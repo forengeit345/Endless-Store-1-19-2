@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "endless_store_mod:block/laminate_flooring_mangrove"
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/laminate_flooring_mangrove",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/laminate_flooring_mangrove",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/laminate_flooring_mangrove",
+      "y": 90
+    }
+  }
+}

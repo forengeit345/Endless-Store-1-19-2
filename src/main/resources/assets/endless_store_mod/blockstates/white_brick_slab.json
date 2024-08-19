@@ -4,7 +4,7 @@
       "model": "endless_store_mod:block/white_brick_slab"
     },
     "type=double": {
-      "model": "endless_store_mod:block/white_brick_block"
+      "model": "endless_store_mod:block/white_brick"
     },
     "type=top": {
       "model": "endless_store_mod:block/white_brick_slab_top"

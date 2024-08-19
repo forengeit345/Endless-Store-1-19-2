@@ -4,7 +4,7 @@
       "model": "endless_store_mod:block/dark_concreate_slab"
     },
     "type=double": {
-      "model": "endless_store_mod:block/dark_concreate_block"
+      "model": "endless_store_mod:block/dark_concreate"
     },
     "type=top": {
       "model": "endless_store_mod:block/dark_concreate_slab_top"
