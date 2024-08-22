@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "endless_store_mod:block/metal_garage_door"
+  }
+}

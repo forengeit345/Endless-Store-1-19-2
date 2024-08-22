@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/stairs",
   "textures": {
-    "bottom": "endless_store_mod:blocks/white_brick",
-    "top": "endless_store_mod:blocks/white_brick",
-    "side": "endless_store_mod:blocks/white_brick"
+    "bottom": "endless_store_mod:block/white_brick",
+    "top": "endless_store_mod:block/white_brick",
+    "side": "endless_store_mod:block/white_brick"
   }
 }

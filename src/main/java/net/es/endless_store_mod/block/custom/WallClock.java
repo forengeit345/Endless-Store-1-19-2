@@ -22,10 +22,10 @@ public class WallClock extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = Block.createCuboidShape(4.6, 4.6, 0, 11.4, 11.4, 0.6);
-    private static VoxelShape SHAPE_S = Block.createCuboidShape(4.6, 4.6, 15.4, 11.4, 11.4, 16);
-    private static VoxelShape SHAPE_W = Block.createCuboidShape(0, 4.6, 4.6, 0.6, 11.4, 11.4);
-    private static VoxelShape SHAPE_E = Block.createCuboidShape(15.4, 4.6, 4.6, 16, 11.4, 11.4);
+    private static final VoxelShape SHAPE_N = Block.createCuboidShape(4.6, 4.6, 0, 11.4, 11.4, 0.6);
+    private static final VoxelShape SHAPE_S = Block.createCuboidShape(4.6, 4.6, 15.4, 11.4, 11.4, 16);
+    private static final VoxelShape SHAPE_W = Block.createCuboidShape(0, 4.6, 4.6, 0.6, 11.4, 11.4);
+    private static final VoxelShape SHAPE_E = Block.createCuboidShape(15.4, 4.6, 4.6, 16, 11.4, 11.4);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {

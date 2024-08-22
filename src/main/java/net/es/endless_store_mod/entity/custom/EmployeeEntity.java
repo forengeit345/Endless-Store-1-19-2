@@ -40,7 +40,7 @@ public class EmployeeEntity extends HostileEntity implements IAnimatable {
     private boolean canBreakDoors;
     private final BreakDoorGoal breakDoorsGoal;
     private static final Predicate<Difficulty> DOOR_BREAK_DIFFICULTY_CHECKER;
-    private AnimationFactory factory = GeckoLibUtil.createFactory(this);
+    private final AnimationFactory factory = GeckoLibUtil.createFactory(this);
 
     public EmployeeEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);

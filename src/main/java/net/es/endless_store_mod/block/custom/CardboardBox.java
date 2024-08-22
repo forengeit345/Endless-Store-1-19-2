@@ -23,10 +23,10 @@ public class CardboardBox extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = Block.createCuboidShape(2.5, 0, 4.4, 11.5, 8.9, 13.3);
-    private static VoxelShape SHAPE_S = Block.createCuboidShape(4.5, 0, 2.4, 13.5, 8.9, 11.3);
-    private static VoxelShape SHAPE_W = Block.createCuboidShape(2.5, 0, 2.4, 11.5, 8.9, 11.3);
-    private static VoxelShape SHAPE_E = Block.createCuboidShape(4.5, 0, 4.4, 13.5, 8.9, 13.3);
+    private static final VoxelShape SHAPE_N = Block.createCuboidShape(2.5, 0, 4.4, 11.5, 8.9, 13.3);
+    private static final VoxelShape SHAPE_S = Block.createCuboidShape(4.5, 0, 2.4, 13.5, 8.9, 11.3);
+    private static final VoxelShape SHAPE_W = Block.createCuboidShape(2.5, 0, 2.4, 11.5, 8.9, 11.3);
+    private static final VoxelShape SHAPE_E = Block.createCuboidShape(4.5, 0, 4.4, 13.5, 8.9, 13.3);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {

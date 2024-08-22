@@ -23,10 +23,10 @@ public class Safe extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = Block.createCuboidShape(2, 0, 3, 14, 8, 12.3);
-    private static VoxelShape SHAPE_S = Block.createCuboidShape(2, 0, 4, 14, 8, 13.3);
-    private static VoxelShape SHAPE_W = Block.createCuboidShape(3, 0, 2, 12.3, 8, 14);
-    private static VoxelShape SHAPE_E = Block.createCuboidShape(3.7, 0, 2, 13, 8, 14);
+    private static final VoxelShape SHAPE_N = Block.createCuboidShape(2, 0, 3, 14, 8, 12.3);
+    private static final VoxelShape SHAPE_S = Block.createCuboidShape(2, 0, 4, 14, 8, 13.3);
+    private static final VoxelShape SHAPE_W = Block.createCuboidShape(3, 0, 2, 12.3, 8, 14);
+    private static final VoxelShape SHAPE_E = Block.createCuboidShape(3.7, 0, 2, 13, 8, 14);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {

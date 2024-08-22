@@ -23,10 +23,10 @@ public class SideBeams extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = Block.createCuboidShape(15, 0, 0, 16, 16, 16);
-    private static VoxelShape SHAPE_S = Block.createCuboidShape(0, 0, 0, 1, 16, 16);
-    private static VoxelShape SHAPE_W = Block.createCuboidShape(0, 0, 0, 16, 16, 1);
-    private static VoxelShape SHAPE_E = Block.createCuboidShape(0, 0, 15, 16, 16, 16);
+    private static final VoxelShape SHAPE_N = Block.createCuboidShape(15, 0, 0, 16, 16, 16);
+    private static final VoxelShape SHAPE_S = Block.createCuboidShape(0, 0, 0, 1, 16, 16);
+    private static final VoxelShape SHAPE_W = Block.createCuboidShape(0, 0, 0, 16, 16, 1);
+    private static final VoxelShape SHAPE_E = Block.createCuboidShape(0, 0, 15, 16, 16, 16);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {

@@ -23,19 +23,19 @@ public class BaseboardCorner extends FallingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = VoxelShapes.union(
+    private static final VoxelShape SHAPE_N = VoxelShapes.union(
             Block.createCuboidShape(0, 0, 0, 0.75, 1.5, 16),
             Block.createCuboidShape(0.75, 0, 0, 16, 1.5, 0.75)
     );
-    private static VoxelShape SHAPE_E = VoxelShapes.union(
+    private static final VoxelShape SHAPE_E = VoxelShapes.union(
             Block.createCuboidShape(0, 0, 0, 16, 1.5, 0.75),
             Block.createCuboidShape(15.25, 0, 0.75, 16, 1.5, 16)
     );
-    private static VoxelShape SHAPE_S = VoxelShapes.union(
+    private static final VoxelShape SHAPE_S = VoxelShapes.union(
             Block.createCuboidShape(15.25, 0, 0, 16, 1.5, 16),
             Block.createCuboidShape(0, 0, 15.25, 15.25, 1.5, 16)
     );
-    private static VoxelShape SHAPE_W = VoxelShapes.union(
+    private static final VoxelShape SHAPE_W = VoxelShapes.union(
             Block.createCuboidShape(0, 0, 15.25, 16, 1.5, 16),
             Block.createCuboidShape(0, 0, 0, 0.75, 1.5, 15.25)
     );

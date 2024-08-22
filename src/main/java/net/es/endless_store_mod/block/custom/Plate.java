@@ -23,7 +23,7 @@ public class Plate extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE = Block.createCuboidShape(5, 0, 4.85, 11.3, 0.39, 11.15);
+    private static final VoxelShape SHAPE = Block.createCuboidShape(5, 0, 4.85, 11.3, 0.39, 11.15);
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {

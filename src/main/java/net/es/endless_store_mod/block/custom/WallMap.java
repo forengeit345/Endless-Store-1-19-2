@@ -25,10 +25,10 @@ public class WallMap extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = Block.createCuboidShape(0, 0, 0, 16, 16, 1.1);
-    private static VoxelShape SHAPE_S = Block.createCuboidShape(0, 0, 14.9, 16, 16, 16);
-    private static VoxelShape SHAPE_W = Block.createCuboidShape(0, 0, 0, 1.1, 16, 16);
-    private static VoxelShape SHAPE_E = Block.createCuboidShape(14.9, 0, 0, 16, 16, 16);
+    private static final VoxelShape SHAPE_N = Block.createCuboidShape(0, 0, 0, 16, 16, 1.1);
+    private static final VoxelShape SHAPE_S = Block.createCuboidShape(0, 0, 14.9, 16, 16, 16);
+    private static final VoxelShape SHAPE_W = Block.createCuboidShape(0, 0, 0, 1.1, 16, 16);
+    private static final VoxelShape SHAPE_E = Block.createCuboidShape(14.9, 0, 0, 16, 16, 16);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {

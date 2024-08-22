@@ -23,7 +23,7 @@ public class CardboardBoxLarge extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE = Block.createCuboidShape(1.5, 0, 1.4, 14.5, 12.8, 14.4);
+    private static final VoxelShape SHAPE = Block.createCuboidShape(1.5, 0, 1.4, 14.5, 12.8, 14.4);
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {

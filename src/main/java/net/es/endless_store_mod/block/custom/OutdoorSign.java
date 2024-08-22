@@ -23,10 +23,10 @@ public class OutdoorSign extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = Block.createCuboidShape(2, 0, 1, 14, 15.25, 15);
-    private static VoxelShape SHAPE_S = Block.createCuboidShape(2, 0, 1, 14, 15.25, 15);
-    private static VoxelShape SHAPE_W = Block.createCuboidShape(1, 0, 2, 15, 15.25, 14);
-    private static VoxelShape SHAPE_E = Block.createCuboidShape(1, 0, 2, 15, 15.25, 14);
+    private static final VoxelShape SHAPE_N = Block.createCuboidShape(2, 0, 1, 14, 15.25, 15);
+    private static final VoxelShape SHAPE_S = Block.createCuboidShape(2, 0, 1, 14, 15.25, 15);
+    private static final VoxelShape SHAPE_W = Block.createCuboidShape(1, 0, 2, 15, 15.25, 14);
+    private static final VoxelShape SHAPE_E = Block.createCuboidShape(1, 0, 2, 15, 15.25, 14);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {

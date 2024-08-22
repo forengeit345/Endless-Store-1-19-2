@@ -23,10 +23,10 @@ public class Kettle extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = Block.createCuboidShape(4.1, 0, 2.1, 11.9, 10.4, 14.1);
-    private static VoxelShape SHAPE_S = Block.createCuboidShape(4.1, 0, 2.1, 11.9, 10.4, 14.1);
-    private static VoxelShape SHAPE_W = Block.createCuboidShape(2.1, 0, 4.1, 14.1, 10.4, 11.9);
-    private static VoxelShape SHAPE_E = Block.createCuboidShape(2.1, 0, 4.1, 14.1, 10.4, 11.9);
+    private static final VoxelShape SHAPE_N = Block.createCuboidShape(4.1, 0, 2.1, 11.9, 10.4, 14.1);
+    private static final VoxelShape SHAPE_S = Block.createCuboidShape(4.1, 0, 2.1, 11.9, 10.4, 14.1);
+    private static final VoxelShape SHAPE_W = Block.createCuboidShape(2.1, 0, 4.1, 14.1, 10.4, 11.9);
+    private static final VoxelShape SHAPE_E = Block.createCuboidShape(2.1, 0, 4.1, 14.1, 10.4, 11.9);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {

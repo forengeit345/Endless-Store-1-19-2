@@ -25,10 +25,10 @@ public class CargoTrolleyLongTwoHandles extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = Block.createCuboidShape(-0.6, 0, -4.4, 16.2, 15.7, 20.4);
-    private static VoxelShape SHAPE_S = Block.createCuboidShape(-0.6, 0, -4.4, 16.2, 15.7, 20.4);
-    private static VoxelShape SHAPE_W = Block.createCuboidShape(-4.4, 0, -0.19, 20.4, 15.7, 16.6);
-    private static VoxelShape SHAPE_E = Block.createCuboidShape(-4.4, 0, -0.19, 20.4, 15.7, 16.6);
+    private static final VoxelShape SHAPE_N = Block.createCuboidShape(-0.6, 0, -4.4, 16.2, 15.7, 20.4);
+    private static final VoxelShape SHAPE_S = Block.createCuboidShape(-0.6, 0, -4.4, 16.2, 15.7, 20.4);
+    private static final VoxelShape SHAPE_W = Block.createCuboidShape(-4.4, 0, -0.19, 20.4, 15.7, 16.6);
+    private static final VoxelShape SHAPE_E = Block.createCuboidShape(-4.4, 0, -0.19, 20.4, 15.7, 16.6);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {

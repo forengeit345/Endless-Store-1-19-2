@@ -38,7 +38,7 @@ public class LampProp extends HorizontalFacingBlock {
         return super.onUse(state, world, pos, player, hand, hit);
     }
 
-    private static VoxelShape SHAPE = Block.createCuboidShape(4.5, 0, 4.75, 11.5, 10, 11.25);
+    private static final VoxelShape SHAPE = Block.createCuboidShape(4.5, 0, 4.75, 11.5, 10, 11.25);
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {

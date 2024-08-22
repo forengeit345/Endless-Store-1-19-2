@@ -23,6 +23,9 @@
     ],
     "client": [
       "net.es.endless_store_mod.EndlessClientMod"
+    ],
+    "fabric-datagen": [
+      "net.es.endless_store_mod.datagen.EndlessStoreDataGeneration"
     ]
   },
   "mixins": [

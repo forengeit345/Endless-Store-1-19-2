@@ -24,19 +24,19 @@ public class WoodenChair extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = VoxelShapes.union(
+    private static final VoxelShape SHAPE_N = VoxelShapes.union(
             Block.createCuboidShape(2, 0, 2, 14.5, 7.7, 14.5),
             Block.createCuboidShape(2, 0, 2, 14.5, 20, 3.5)
     );
-    private static VoxelShape SHAPE_S = VoxelShapes.union(
+    private static final VoxelShape SHAPE_S = VoxelShapes.union(
             Block.createCuboidShape(1.5, 0, 1.5, 14, 7.7, 14),
             Block.createCuboidShape(1.5, 0, 12.5, 14, 20, 14)
     );
-    private static VoxelShape SHAPE_E = VoxelShapes.union(
+    private static final VoxelShape SHAPE_E = VoxelShapes.union(
             Block.createCuboidShape(1.5, 0, 2, 14, 7.7, 14.5),
             Block.createCuboidShape(12.5, 0, 2, 14, 20, 14.5)
     );
-    private static VoxelShape SHAPE_W = VoxelShapes.union(
+    private static final VoxelShape SHAPE_W = VoxelShapes.union(
             Block.createCuboidShape(2, 0, 2, 14.5, 7.7, 14.5),
             Block.createCuboidShape(2, 0, 2, 3.5, 20, 14.5)
     );

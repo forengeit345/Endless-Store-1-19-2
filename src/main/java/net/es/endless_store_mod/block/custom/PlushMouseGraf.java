@@ -24,10 +24,10 @@ public class PlushMouseGraf extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = Block.createCuboidShape(6.75, 0, 5.25, 9.25, 1.5, 12);
-    private static VoxelShape SHAPE_S = Block.createCuboidShape(6.75, 0, 4, 9.25, 1.5, 10.75);
-    private static VoxelShape SHAPE_W = Block.createCuboidShape(5.25, 0, 6.75, 12, 1.5, 9.25);
-    private static VoxelShape SHAPE_E = Block.createCuboidShape(4.05, 0, 6.75, 10.8, 1.5, 9.25);
+    private static final VoxelShape SHAPE_N = Block.createCuboidShape(6.75, 0, 5.25, 9.25, 1.5, 12);
+    private static final VoxelShape SHAPE_S = Block.createCuboidShape(6.75, 0, 4, 9.25, 1.5, 10.75);
+    private static final VoxelShape SHAPE_W = Block.createCuboidShape(5.25, 0, 6.75, 12, 1.5, 9.25);
+    private static final VoxelShape SHAPE_E = Block.createCuboidShape(4.05, 0, 6.75, 10.8, 1.5, 9.25);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {

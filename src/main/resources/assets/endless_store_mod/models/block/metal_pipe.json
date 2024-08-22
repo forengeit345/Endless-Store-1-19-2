@@ -1,8 +1,8 @@
 {
   "credit": "forengeit345",
   "textures": {
-    "0": "endless_store_mod:blocks/metal",
-    "particle": "endless_store_mod:blocks/metal"
+    "0": "endless_store_mod:block/metal",
+    "particle": "endless_store_mod:block/metal"
   },
   "elements": [
     {

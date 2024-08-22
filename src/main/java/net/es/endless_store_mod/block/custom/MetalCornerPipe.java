@@ -24,19 +24,19 @@ public class MetalCornerPipe extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = VoxelShapes.union(
+    private static final VoxelShape SHAPE_N = VoxelShapes.union(
             Block.createCuboidShape(4.5, 4, 11.5, 11.5, 11, 16),
             Block.createCuboidShape(0, 4, 4.5, 11.5, 11, 11.5)
     );
-    private static VoxelShape SHAPE_E = VoxelShapes.union(
+    private static final VoxelShape SHAPE_E = VoxelShapes.union(
             Block.createCuboidShape(0, 4, 4.5, 4.5, 11, 11.5),
             Block.createCuboidShape(4.5, 4, 0, 11.5, 11, 11.5)
     );
-    private static VoxelShape SHAPE_S = VoxelShapes.union(
+    private static final VoxelShape SHAPE_S = VoxelShapes.union(
             Block.createCuboidShape(4.5, 4, 0, 11.5, 11, 4.5),
             Block.createCuboidShape(4.5, 4, 4.5, 16, 11, 11.5)
     );
-    private static VoxelShape SHAPE_W = VoxelShapes.union(
+    private static final VoxelShape SHAPE_W = VoxelShapes.union(
             Block.createCuboidShape(11.5, 4, 4.5, 16, 11, 11.5),
             Block.createCuboidShape(4.5, 4, 4.5, 11.5, 11, 16)
     );

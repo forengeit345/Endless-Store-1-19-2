@@ -23,7 +23,7 @@ public class BookVariantTwo extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE = Block.createCuboidShape(3, 0, 2.6, 13, 2, 13.5).simplify();
+    private static final VoxelShape SHAPE = Block.createCuboidShape(3, 0, 2.6, 13, 2, 13.5).simplify();
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {

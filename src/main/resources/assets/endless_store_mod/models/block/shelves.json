@@ -1,9 +1,9 @@
 {
 	"credit": "Discord: nirix_  /   Nirix#1017   ||  Github : https://github.com/Nirix121 ",
 	"textures": {
-		"0": "endless_store_mod:blocks/shelves2",
-		"1": "endless_store_mod:blocks/shelves1",
-		"particle": "endless_store_mod:blocks/shelves1"
+		"0": "endless_store_mod:block/shelves2",
+		"1": "endless_store_mod:block/shelves1",
+		"particle": "endless_store_mod:block/shelves1"
 	},
 	"elements": [
 		{

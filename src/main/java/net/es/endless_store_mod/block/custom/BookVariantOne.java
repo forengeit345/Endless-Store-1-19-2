@@ -23,10 +23,10 @@ public class BookVariantOne extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = Block.createCuboidShape(4.9, 0, 3, 11.2, 1.3, 12);
-    private static VoxelShape SHAPE_S = Block.createCuboidShape(4.9, 0, 4, 11.2, 1.3, 13);
-    private static VoxelShape SHAPE_W = Block.createCuboidShape(3, 0, 4.8, 12, 1.3, 11.1);
-    private static VoxelShape SHAPE_E = Block.createCuboidShape(4, 0, 4.8, 13, 1.3, 11.1);
+    private static final VoxelShape SHAPE_N = Block.createCuboidShape(4.9, 0, 3, 11.2, 1.3, 12);
+    private static final VoxelShape SHAPE_S = Block.createCuboidShape(4.9, 0, 4, 11.2, 1.3, 13);
+    private static final VoxelShape SHAPE_W = Block.createCuboidShape(3, 0, 4.8, 12, 1.3, 11.1);
+    private static final VoxelShape SHAPE_E = Block.createCuboidShape(4, 0, 4.8, 13, 1.3, 11.1);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {

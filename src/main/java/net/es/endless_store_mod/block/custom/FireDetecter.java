@@ -20,7 +20,7 @@ public class FireDetecter extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE = Block.createCuboidShape(6.25, 14.7, 6.25, 9.75, 16, 9.85);
+    private static final VoxelShape SHAPE = Block.createCuboidShape(6.25, 14.7, 6.25, 9.75, 16, 9.85);
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {

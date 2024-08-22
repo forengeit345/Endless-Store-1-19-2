@@ -25,10 +25,10 @@ public class FuseBox extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = Block.createCuboidShape(2, 1, 0, 14, 15, 2);
-    private static VoxelShape SHAPE_S = Block.createCuboidShape(2, 1, 14, 14, 15, 16);
-    private static VoxelShape SHAPE_W = Block.createCuboidShape(0, 1, 2, 2, 15, 14);
-    private static VoxelShape SHAPE_E = Block.createCuboidShape(14, 1, 2, 16, 15, 14);
+    private static final VoxelShape SHAPE_N = Block.createCuboidShape(2, 1, 0, 14, 15, 2);
+    private static final VoxelShape SHAPE_S = Block.createCuboidShape(2, 1, 14, 14, 15, 16);
+    private static final VoxelShape SHAPE_W = Block.createCuboidShape(0, 1, 2, 2, 15, 14);
+    private static final VoxelShape SHAPE_E = Block.createCuboidShape(14, 1, 2, 16, 15, 14);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {

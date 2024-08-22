@@ -23,10 +23,10 @@ public class MetalPipe extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = Block.createCuboidShape(4.5, 4, 0, 11.5, 11, 16);
-    private static VoxelShape SHAPE_S = Block.createCuboidShape(4.5, 4, 0, 11.5, 11, 16);
-    private static VoxelShape SHAPE_W = Block.createCuboidShape(0, 4, 4.5, 16, 11, 11.5);
-    private static VoxelShape SHAPE_E = Block.createCuboidShape(0, 4, 4.5, 16, 11, 11.5);
+    private static final VoxelShape SHAPE_N = Block.createCuboidShape(4.5, 4, 0, 11.5, 11, 16);
+    private static final VoxelShape SHAPE_S = Block.createCuboidShape(4.5, 4, 0, 11.5, 11, 16);
+    private static final VoxelShape SHAPE_W = Block.createCuboidShape(0, 4, 4.5, 16, 11, 11.5);
+    private static final VoxelShape SHAPE_E = Block.createCuboidShape(0, 4, 4.5, 16, 11, 11.5);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {

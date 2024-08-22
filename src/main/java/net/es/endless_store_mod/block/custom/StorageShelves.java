@@ -23,10 +23,10 @@ public class StorageShelves extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = Block.createCuboidShape(0, 14.5, 0.5, 16, 16, 15.5);
-    private static VoxelShape SHAPE_S = Block.createCuboidShape(0, 14.5, 0.5, 16, 16, 15.5);
-    private static VoxelShape SHAPE_W = Block.createCuboidShape(0.5, 14.5, 0, 15.5, 16, 16);
-    private static VoxelShape SHAPE_E = Block.createCuboidShape(0.5, 14.5, 0, 15.5, 16, 16);
+    private static final VoxelShape SHAPE_N = Block.createCuboidShape(0, 14.5, 0.5, 16, 16, 15.5);
+    private static final VoxelShape SHAPE_S = Block.createCuboidShape(0, 14.5, 0.5, 16, 16, 15.5);
+    private static final VoxelShape SHAPE_W = Block.createCuboidShape(0.5, 14.5, 0, 15.5, 16, 16);
+    private static final VoxelShape SHAPE_E = Block.createCuboidShape(0.5, 14.5, 0, 15.5, 16, 16);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {

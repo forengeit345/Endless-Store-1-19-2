@@ -22,7 +22,7 @@ public class CoilWires extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE = Block.createCuboidShape(3.4, 0, 3.5, 12.45, 3.15, 12.5);
+    private static final VoxelShape SHAPE = Block.createCuboidShape(3.4, 0, 3.5, 12.45, 3.15, 12.5);
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {

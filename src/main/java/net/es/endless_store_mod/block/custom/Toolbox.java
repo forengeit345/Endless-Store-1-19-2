@@ -22,10 +22,10 @@ public class Toolbox extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = Block.createCuboidShape(2.9, 0, 5, 13.1, 6.5, 12);
-    private static VoxelShape SHAPE_S = Block.createCuboidShape(2.9, 0, 4, 13.1, 6.5, 11);
-    private static VoxelShape SHAPE_W = Block.createCuboidShape(5, 0, 3, 12, 6.5, 13.1);
-    private static VoxelShape SHAPE_E = Block.createCuboidShape(4, 0, 3, 11, 6.5, 13.1);
+    private static final VoxelShape SHAPE_N = Block.createCuboidShape(2.9, 0, 5, 13.1, 6.5, 12);
+    private static final VoxelShape SHAPE_S = Block.createCuboidShape(2.9, 0, 4, 13.1, 6.5, 11);
+    private static final VoxelShape SHAPE_W = Block.createCuboidShape(5, 0, 3, 12, 6.5, 13.1);
+    private static final VoxelShape SHAPE_E = Block.createCuboidShape(4, 0, 3, 11, 6.5, 13.1);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {

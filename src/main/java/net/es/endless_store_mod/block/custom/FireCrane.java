@@ -25,10 +25,10 @@ public class FireCrane extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = Block.createCuboidShape(1.8, 1.8, 0, 14.3, 15.1, 2.4);
-    private static VoxelShape SHAPE_S = Block.createCuboidShape(1.7, 1.8, 13.6, 14.2, 15.1, 16);
-    private static VoxelShape SHAPE_W = Block.createCuboidShape(0, 1.8, 1.7, 2.4, 15.1, 14.2);
-    private static VoxelShape SHAPE_E = Block.createCuboidShape(13.6, 1.8, 1.7, 16, 15.1, 14.2);
+    private static final VoxelShape SHAPE_N = Block.createCuboidShape(1.8, 1.8, 0, 14.3, 15.1, 2.4);
+    private static final VoxelShape SHAPE_S = Block.createCuboidShape(1.7, 1.8, 13.6, 14.2, 15.1, 16);
+    private static final VoxelShape SHAPE_W = Block.createCuboidShape(0, 1.8, 1.7, 2.4, 15.1, 14.2);
+    private static final VoxelShape SHAPE_E = Block.createCuboidShape(13.6, 1.8, 1.7, 16, 15.1, 14.2);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {

@@ -23,10 +23,10 @@ public class Baseboard extends FallingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = Block.createCuboidShape(0, 0, 0, 16, 1.5, 0.75);
-    private static VoxelShape SHAPE_S = Block.createCuboidShape(0, 0, 0, 0.75, 1.5, 16);
-    private static VoxelShape SHAPE_W = Block.createCuboidShape(0, 0, 15.25, 16, 1.5, 16);
-    private static VoxelShape SHAPE_E = Block.createCuboidShape(15.25, 0, 0, 16, 1.5, 16);
+    private static final VoxelShape SHAPE_N = Block.createCuboidShape(0, 0, 0, 16, 1.5, 0.75);
+    private static final VoxelShape SHAPE_S = Block.createCuboidShape(0, 0, 0, 0.75, 1.5, 16);
+    private static final VoxelShape SHAPE_W = Block.createCuboidShape(0, 0, 15.25, 16, 1.5, 16);
+    private static final VoxelShape SHAPE_E = Block.createCuboidShape(15.25, 0, 0, 16, 1.5, 16);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {

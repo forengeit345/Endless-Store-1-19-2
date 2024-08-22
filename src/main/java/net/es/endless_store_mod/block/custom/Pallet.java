@@ -20,7 +20,7 @@ public class Pallet extends FallingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE = Block.createCuboidShape(0, 0, 0, 16, 2.2, 16).simplify();
+    private static final VoxelShape SHAPE = Block.createCuboidShape(0, 0, 0, 16, 2.2, 16).simplify();
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {

@@ -23,10 +23,10 @@ public class Armchair extends HorizontalFacingBlock {
         super(settings);
     }
 
-    private static VoxelShape SHAPE_N = Block.createCuboidShape(-2.1, 0, 0.6, 18.1, 13.8, 18.3);
-    private static VoxelShape SHAPE_S = Block.createCuboidShape(-2.1, 0, -2.4, 18.1, 13.8, 15.3);
-    private static VoxelShape SHAPE_W = Block.createCuboidShape(-2.3, 0, -1.1, 17.4, 13.8, 19.1);
-    private static VoxelShape SHAPE_E = Block.createCuboidShape(0.7, 0, -1.1, 17.4, 13.8, 19.1);
+    private static final VoxelShape SHAPE_N = Block.createCuboidShape(-2.1, 0, 0.6, 18.1, 13.8, 18.3);
+    private static final VoxelShape SHAPE_S = Block.createCuboidShape(-2.1, 0, -2.4, 18.1, 13.8, 15.3);
+    private static final VoxelShape SHAPE_W = Block.createCuboidShape(-2.3, 0, -1.1, 17.4, 13.8, 19.1);
+    private static final VoxelShape SHAPE_E = Block.createCuboidShape(0.7, 0, -1.1, 17.4, 13.8, 19.1);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {
