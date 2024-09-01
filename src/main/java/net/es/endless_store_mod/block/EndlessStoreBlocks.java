@@ -12,168 +12,97 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class EndlessStoreBlocks {
-    // Просто блоки
-    public static final Block LAMINATE_FLOORING_LIGHT = registerBlock("laminate_flooring_light",
-            new RotateBlock(Block.Settings.of(Material.WOOD).strength(5f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block LAMINATE_FLOORING_LIGHT_VERTICAL = registerBlock("laminate_flooring_light_vertical",
-            new RotateBlock(Block.Settings.of(Material.WOOD).strength(5f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block LAMINATE_FLOORING_DARK = registerBlock("laminate_flooring_dark",
-            new RotateBlock(Block.Settings.of(Material.WOOD).strength(5f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block LAMINATE_FLOORING_MANGROVE = registerBlock("laminate_flooring_mangrove",
-            new RotateBlock(Block.Settings.of(Material.WOOD).strength(5f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block LAMINATE_FLOORING_WHITE = registerBlock("laminate_flooring_white",
-            new RotateBlock(Block.Settings.of(Material.STONE).strength(5f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block FLOOR_TILES_MULTI_COLORED = registerBlock("floor_tiles_multi_colored",
-            new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block PLITKA_WATER = registerBlock("plitka_water",
-            new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block CONCREATE = registerBlock("concreate",
-            new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block MOSSY_CONCREATE = registerBlock("mossy_concreate",
-            new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block OVERGROWN_CONCREATE = registerBlock("overgrown_concreate",
-            new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block DARK_MOSSY_CONCREATE = registerBlock("dark_mossy_concreate",
-            new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block DARK_OVERGROWN_CONCREATE = registerBlock("dark_overgrown_concreate",
-            new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block DARK_CRACKED_CONCREATE = registerBlock("dark_cracked_concreate",
-            new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block DARK_CONCREATE = registerBlock("dark_concreate",
-            new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block CONCREATE_SLAB = registerBlock("concreate_slab",
-            new SlabBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block CONCREATE_STAIRS = registerBlock("concreate_stairs",
-            new ModStairsBlock(EndlessStoreBlocks.CONCREATE.getDefaultState(), Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block DARK_CONCREATE_SLAB = registerBlock("dark_concreate_slab",
-            new SlabBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block DARK_CONCREATE_STAIRS = registerBlock("dark_concreate_stairs",
-            new ModStairsBlock(EndlessStoreBlocks.DARK_CONCREATE.getDefaultState(), Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block YELLOW_CONCREATE = registerBlock("yellow_concreate",
-            new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block ORANGE_GRANIT = registerBlock("orange_granit",
-            new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block WHITE_BRICK = registerBlock("white_brick",
-            new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block WHITE_BRICK_ALTERNATIVE = registerBlock("white_brick_alternative",
-            new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block WHITE_BRICK_SLAB = registerBlock("white_brick_slab",
-            new SlabBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block WHITE_BRICK_STAIRS_ES = registerBlock("white_brick_stairs_es",
-            new ModStairsBlock(EndlessStoreBlocks.WHITE_BRICK.getDefaultState(), Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block WHITE_BRICK_SLAB_ALTERNATIVE = registerBlock("white_brick_slab_alternative",
-            new SlabBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block WHITE_BRICK_STAIRS_ALTERNATIVE = registerBlock("white_brick_stairs_alternative",
-            new ModStairsBlock(EndlessStoreBlocks.WHITE_BRICK_ALTERNATIVE.getDefaultState(), Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block LINOLEUM_LIGHT = registerBlock("linoleum_light",
-            new RotateBlock(Block.Settings.of(Material.WOOD).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block LINOLEUM_BROWN = registerBlock("linoleum_brown",
-            new RotateBlock(Block.Settings.of(Material.WOOD).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block WALLPAPER_YELLOW = registerBlock("wallpaper_yellow",
-            new RotateBlock(Block.Settings.of(Material.WOOD).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block WALLPAPER_WHITE = registerBlock("wallpaper_white",
-            new RotateBlock(Block.Settings.of(Material.WOOD).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block WALLPAPER_BLUE = registerBlock("wallpaper_blue",
-            new RotateBlock(Block.Settings.of(Material.WOOD).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block METAL_GARAGE_DOOR = registerBlock("metal_garage_door",
-            new RotateBlock(Block.Settings.of(Material.METAL).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block PATTERNED_CARPET= registerBlock("patterned_carpet",
-            new CarpetCustom(Block.Settings.of(Material.WOOL).strength(6f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    // Блоки с ванильным шейпом
+    public static final Block LAMINATE_FLOORING_LIGHT = registerBlock("laminate_flooring_light", new RotateBlock(Block.Settings.of(Material.WOOD).strength(5f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block LAMINATE_FLOORING_LIGHT_VERTICAL = registerBlock("laminate_flooring_light_vertical", new RotateBlock(Block.Settings.of(Material.WOOD).strength(5f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block LAMINATE_FLOORING_DARK = registerBlock("laminate_flooring_dark", new RotateBlock(Block.Settings.of(Material.WOOD).strength(5f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block LAMINATE_FLOORING_MANGROVE = registerBlock("laminate_flooring_mangrove", new RotateBlock(Block.Settings.of(Material.WOOD).strength(5f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block LAMINATE_FLOORING_WHITE = registerBlock("laminate_flooring_white", new RotateBlock(Block.Settings.of(Material.STONE).strength(5f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block FLOOR_TILES_MULTI_COLORED = registerBlock("floor_tiles_multi_colored", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block PLITKA_WATER = registerBlock("plitka_water", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block CONCREATE = registerBlock("concreate", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block MOSSY_CONCREATE = registerBlock("mossy_concreate", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block OVERGROWN_CONCREATE = registerBlock("overgrown_concreate", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block DARK_MOSSY_CONCREATE = registerBlock("dark_mossy_concreate", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block DARK_OVERGROWN_CONCREATE = registerBlock("dark_overgrown_concreate", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block DARK_CRACKED_CONCREATE = registerBlock("dark_cracked_concreate", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block DARK_CONCREATE = registerBlock("dark_concreate", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block CONCREATE_SLAB = registerBlock("concreate_slab", new SlabBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block CONCREATE_STAIRS = registerBlock("concreate_stairs", new ModStairsBlock(EndlessStoreBlocks.CONCREATE.getDefaultState(), Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block DARK_CONCREATE_SLAB = registerBlock("dark_concreate_slab", new SlabBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block DARK_CONCREATE_STAIRS = registerBlock("dark_concreate_stairs", new ModStairsBlock(EndlessStoreBlocks.DARK_CONCREATE.getDefaultState(), Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block YELLOW_CONCREATE = registerBlock("yellow_concreate", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block ORANGE_GRANIT = registerBlock("orange_granit", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block WHITE_BRICK = registerBlock("white_brick", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block WHITE_BRICK_ALTERNATIVE = registerBlock("white_brick_alternative", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block WHITE_BRICK_SLAB = registerBlock("white_brick_slab", new SlabBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block WHITE_BRICK_STAIRS_ES = registerBlock("white_brick_stairs_es", new ModStairsBlock(EndlessStoreBlocks.WHITE_BRICK.getDefaultState(), Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block WHITE_BRICK_SLAB_ALTERNATIVE = registerBlock("white_brick_slab_alternative", new SlabBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block WHITE_BRICK_STAIRS_ALTERNATIVE = registerBlock("white_brick_stairs_alternative", new ModStairsBlock(EndlessStoreBlocks.WHITE_BRICK_ALTERNATIVE.getDefaultState(), Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block LINOLEUM_LIGHT = registerBlock("linoleum_light", new RotateBlock(Block.Settings.of(Material.WOOD).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block LINOLEUM_BROWN = registerBlock("linoleum_brown", new RotateBlock(Block.Settings.of(Material.WOOD).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block WALLPAPER_YELLOW = registerBlock("wallpaper_yellow", new RotateBlock(Block.Settings.of(Material.WOOD).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block WALLPAPER_WHITE = registerBlock("wallpaper_white", new RotateBlock(Block.Settings.of(Material.WOOD).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block WALLPAPER_BLUE = registerBlock("wallpaper_blue", new RotateBlock(Block.Settings.of(Material.WOOD).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block METAL_GARAGE_DOOR = registerBlock("metal_garage_door", new RotateBlock(Block.Settings.of(Material.METAL).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block PATTERNED_CARPET= registerBlock("patterned_carpet", new CarpetCustom(Block.Settings.of(Material.WOOL).strength(6f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
 
     // Блоки с кастомным шейпом
-    public static final Block METAL_PIPE = registerBlock("metal_pipe",
-            new MetalPipe(Block.Settings.of(Material.METAL).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block METAL_CORNER_PIPE = registerBlock("metal_corner_pipe",
-            new MetalCornerPipe(Block.Settings.of(Material.METAL).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block SHELVES = registerBlock("shelves",
-            new ShelvesProp(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block BASEBOARD = registerBlock("baseboard",
-            new Baseboard(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block BASEBOARD_CORNER = registerBlock("baseboard_corner",
-            new BaseboardCorner(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block GRID_VERTICAL = registerBlock("grid_vertical",
-            new GridPropVertical(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block PLUSH_MOUSE_GRAF = registerBlock("plush_mouse_graf",
-            new PlushMouseGraf(Block.Settings.of(Material.WOOL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block OUTDOOR_SIGN = registerBlock("outdoor_sign",
-            new OutdoorSign(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block FIRE_CRANE = registerBlock("fire_crane",
-            new FireCrane(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block KETTLE = registerBlock("kettle",
-            new Kettle(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block WALL_CLOCK = registerBlock("wall_clock",
-            new WallClock(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block PALLET = registerBlock("pallet",
-            new Pallet(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block FIRE_DETECTER = registerBlock("fire_detecter",
-            new FireDetecter(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block WALL_MAP = registerBlock("wall_map",
-            new WallMap(Block.Settings.of(Material.DECORATION).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block CARGO_TROLLEY = registerBlock("cargo_trolley",
-            new CargoTrolley(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block CARGO_TROLLEY_LONG_TWO_HANDLES = registerBlock("cargo_trolley_long_two_handles",
-            new CargoTrolleyLongTwoHandles(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block BOOK_VARIANT_ONE = registerBlock("book_variant_one",
-            new BookVariantOne(Block.Settings.of(Material.DECORATION).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block BOOK_VARIANT_TWO = registerBlock("book_variant_two",
-            new BookVariantTwo(Block.Settings.of(Material.DECORATION).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block BOOK_VARIANT_THREE = registerBlock("book_variant_three",
-            new BookVariantThree(Block.Settings.of(Material.DECORATION).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block ARMCHAIR = registerBlock("armchair",
-            new Armchair(Block.Settings.of(Material.WOOL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block WARDROBE = registerBlock("wardrobe",
-            new Wardrobe(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block CARDBOARD_BOX = registerBlock("cardboard_box",
-            new CardboardBox(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block CARDBOARD_BOX_OPEN = registerBlock("cardboard_box_open",
-            new CardboardBox(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block CARDBOARD_BOX_MIDDLE = registerBlock("cardboard_box_middle",
-            new CardboardBoxMiddle(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block CARDBOARD_BOX_MIDDLE_OPEN = registerBlock("cardboard_box_middle_open",
-            new CardboardBoxMiddle(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block CARDBOARD_BOX_LARGE = registerBlock("cardboard_box_large",
-            new CardboardBoxLarge(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block CARDBOARD_BOX_LARGE_OPEN = registerBlock("cardboard_box_large_open",
-            new CardboardBoxLarge(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block CARDBOARD_BOX_HUGE = registerBlock("cardboard_box_huge",
-            new CardboardBoxHuge(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block CARDBOARD_BOX_HUGE_OPEN = registerBlock("cardboard_box_huge_open",
-            new CardboardBoxHuge(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block TRASH_CAN = registerBlock("trash_can",
-            new TrashCan(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block PLATE = registerBlock("plate",
-            new Plate(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block FUSE_BOX = registerBlock("fuse_box",
-            new FuseBox(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block FUSE_BOX_LARGE = registerBlock("fuse_box_large",
-            new FuseBoxLarge(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block SAFE = registerBlock("safe",
-            new Safe(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block TOOLBOX = registerBlock("toolbox",
-            new Toolbox(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block COIL_WIRES = registerBlock("coil_wires",
-            new CoilWires(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block WOODEN_CHAIR = registerBlock("wooden_chair",
-            new WoodenChair(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block WOODEN_TABLE = registerBlock("wooden_table",
-            new WoodenTable(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block STORAGE_SHELVES = registerBlock("storage_shelves",
-            new StorageShelves(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block SIDE_STORAGE_SHELVES = registerBlock("side_storage_shelves",
-            new SideStorageShelves(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block SIDE_BEAMS = registerBlock("side_beams",
-            new SideBeams(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block METAL_PIPE = registerBlock("metal_pipe", new MetalPipe(Block.Settings.of(Material.METAL).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block METAL_CORNER_PIPE = registerBlock("metal_corner_pipe", new MetalCornerPipe(Block.Settings.of(Material.METAL).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block SHELVES = registerBlock("shelves", new ShelvesProp(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block BASEBOARD = registerBlock("baseboard", new Baseboard(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block BASEBOARD_CORNER = registerBlock("baseboard_corner", new BaseboardCorner(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block GRID_VERTICAL = registerBlock("grid_vertical", new GridPropVertical(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block PLUSH_MOUSE_GRAF = registerBlock("plush_mouse_graf", new PlushMouseGraf(Block.Settings.of(Material.WOOL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block OUTDOOR_SIGN = registerBlock("outdoor_sign", new OutdoorSign(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block FIRE_CRANE = registerBlock("fire_crane", new FireCrane(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block KETTLE = registerBlock("kettle", new Kettle(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block WALL_CLOCK = registerBlock("wall_clock", new WallClock(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block PALLET = registerBlock("pallet", new Pallet(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block FIRE_DETECTER = registerBlock("fire_detecter", new FireDetecter(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block WALL_MAP = registerBlock("wall_map", new WallMap(Block.Settings.of(Material.DECORATION).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block CARGO_TROLLEY = registerBlock("cargo_trolley", new CargoTrolley(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block CARGO_TROLLEY_LONG_TWO_HANDLES = registerBlock("cargo_trolley_long_two_handles", new CargoTrolleyLongTwoHandles(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block BOOK_VARIANT_ONE = registerBlock("book_variant_one", new BookVariantOne(Block.Settings.of(Material.DECORATION).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block BOOK_VARIANT_TWO = registerBlock("book_variant_two", new BookVariantTwo(Block.Settings.of(Material.DECORATION).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block BOOK_VARIANT_THREE = registerBlock("book_variant_three", new BookVariantThree(Block.Settings.of(Material.DECORATION).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block ARMCHAIR = registerBlock("armchair", new Armchair(Block.Settings.of(Material.WOOL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block WARDROBE = registerBlock("wardrobe", new Wardrobe(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block CARDBOARD_BOX = registerBlock("cardboard_box", new CardboardBox(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block CARDBOARD_BOX_OPEN = registerBlock("cardboard_box_open", new CardboardBox(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block CARDBOARD_BOX_MIDDLE = registerBlock("cardboard_box_middle", new CardboardBoxMiddle(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block CARDBOARD_BOX_MIDDLE_OPEN = registerBlock("cardboard_box_middle_open", new CardboardBoxMiddle(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block CARDBOARD_BOX_LARGE = registerBlock("cardboard_box_large", new CardboardBoxLarge(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block CARDBOARD_BOX_LARGE_OPEN = registerBlock("cardboard_box_large_open", new CardboardBoxLarge(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block CARDBOARD_BOX_HUGE = registerBlock("cardboard_box_huge", new CardboardBoxHuge(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block CARDBOARD_BOX_HUGE_OPEN = registerBlock("cardboard_box_huge_open", new CardboardBoxHuge(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block TRASH_CAN = registerBlock("trash_can", new TrashCan(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block PLATE = registerBlock("plate", new Plate(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block FUSE_BOX = registerBlock("fuse_box", new FuseBox(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block FUSE_BOX_LARGE = registerBlock("fuse_box_large", new FuseBoxLarge(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block SAFE = registerBlock("safe", new Safe(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block TOOLBOX = registerBlock("toolbox", new Toolbox(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block COIL_WIRES = registerBlock("coil_wires", new CoilWires(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block WOODEN_CHAIR = registerBlock("wooden_chair", new WoodenChair(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block WOODEN_TABLE = registerBlock("wooden_table", new WoodenTable(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block STORAGE_SHELVES = registerBlock("storage_shelves", new StorageShelves(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block SIDE_STORAGE_SHELVES = registerBlock("side_storage_shelves", new SideStorageShelves(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block SIDE_BEAMS = registerBlock("side_beams", new SideBeams(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block TOWEL_HOLDER = registerBlock("towel_holder", new TowelHolder(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block PADDED_STOOL = registerBlock("padded_stool", new PaddedStool(Block.Settings.of(Material.WOOL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block MIRROR = registerBlock("mirror", new Mirror(Block.Settings.of(Material.GLASS).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block HIGH_MIRROR = registerBlock("high_mirror", new HighMirror(Block.Settings.of(Material.GLASS).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block BATH = registerBlock("bath", new Bath(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block RADIATOR_RIGHT_SIDE = registerBlock("radiator_right_side", new Radiator(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block RADIATOR_LEFT_SIDE = registerBlock("radiator_left_side", new Radiator(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block CEILING_GRID = registerBlock("ceiling_grid", new CeilingGrid(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+
 
     // Светяшки и всё что даёт хоть какой-то свет
-    public static final Block LAMP = registerBlock("lamp",
-            new LampProp(Block.Settings.of(Material.WOOD).strength(5f).requiresTool().nonOpaque()
-                    .luminance(state -> state.get(LampProp.LIT) ? 10 : 0)), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block LAMP_HIGH = registerBlock("lamp_high",
-            new LampHighProp(Block.Settings.of(Material.WOOD).strength(5f).requiresTool().nonOpaque()
-                    .luminance(state -> state.get(LampProp.LIT) ? 14 : 0)), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block LAMP_LED = registerBlock("lamp_led",
-            new LampLED(Block.Settings.of(Material.WOOD).strength(5f).requiresTool().nonOpaque()
-                    .luminance(state -> state.get(LampProp.LIT) ? 14 : 0)), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block LAMP = registerBlock("lamp", new LampProp(Block.Settings.of(Material.WOOD).strength(5f).requiresTool().nonOpaque().luminance(state -> state.get(LampProp.LIT) ? 10 : 0)), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block LAMP_HIGH = registerBlock("lamp_high", new LampHighProp(Block.Settings.of(Material.WOOD).strength(5f).requiresTool().nonOpaque().luminance(state -> state.get(LampProp.LIT) ? 14 : 0)), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block LAMP_LED = registerBlock("lamp_led", new LampLED(Block.Settings.of(Material.WOOD).strength(5f).requiresTool().nonOpaque().luminance(state -> state.get(LampProp.LIT) ? 14 : 0)), EndlessStoreItemGroup.ENDLESS_MOD);
     
 
     private static Block registerBlock(String name, Block block, ItemGroup tab) {

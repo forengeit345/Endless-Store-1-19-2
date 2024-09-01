@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "endless_store_mod:block/high_mirror",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/high_mirror"
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/high_mirror",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/high_mirror",
+      "y": 270
+    }
+  }
+}
