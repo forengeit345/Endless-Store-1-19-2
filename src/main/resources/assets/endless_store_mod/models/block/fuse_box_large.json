@@ -2,7 +2,7 @@
   "credit": "Mikr",
   "textures": {
     "0": "endless_store_mod:fuse_box_large",
-    "particle": "endless_store_mod:fuse_box_large"
+    "particle": "endless_store_mod:particle/placeholder_particle"
   },
   "elements": [
     {
@@ -486,14 +486,14 @@
       "scale": [0.6, 0.6, 0.6]
     },
     "firstperson_righthand": {
-      "rotation": [3.19, -43, 4.68],
-      "translation": [-7.5, 6.5, 9],
-      "scale": [0.2, 0.2, 0.2]
+      "rotation": [3.19, -24, 4.68],
+      "translation": [-0.75, -0.5, -0.75],
+      "scale": [0.8, 0.8, 0.8]
     },
     "firstperson_lefthand": {
-      "rotation": [3.19, -43, 4.68],
-      "translation": [-7.5, 6.5, 9],
-      "scale": [0.2, 0.2, 0.2]
+      "rotation": [3.19, -24, 4.68],
+      "translation": [-0.75, -0.5, -0.75],
+      "scale": [0.8, 0.8, 0.8]
     },
     "ground": {
       "translation": [0, 0, 3.75],

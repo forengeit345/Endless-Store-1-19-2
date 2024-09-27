@@ -2,7 +2,7 @@
   "credit": "Mikr",
   "textures": {
     "0": "endless_store_mod:cargo_trolley_long_two_handles",
-    "particle": "endless_store_mod:cargo_trolley_long_two_handles"
+    "particle": "endless_store_mod:particle/placeholder_particle"
   },
   "elements": [
     {

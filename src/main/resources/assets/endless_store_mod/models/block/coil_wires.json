@@ -2,7 +2,7 @@
   "credit": "Mikr",
   "textures": {
     "0": "endless_store_mod:coil_wires",
-    "particle": "endless_store_mod:coil_wires"
+    "particle": "endless_store_mod:particle/placeholder_particle"
   },
   "elements": [
     {
@@ -252,14 +252,14 @@
       "scale": [0.88, 0.88, 0.88]
     },
     "firstperson_righthand": {
-      "rotation": [3.19, -43, 4.68],
-      "translation": [-7.5, 8, 9],
-      "scale": [0.2, 0.2, 0.2]
+      "rotation": [3.19, -42, 4.68],
+      "translation": [0, 5.5, -1.5],
+      "scale": [0.8, 0.8, 0.8]
     },
     "firstperson_lefthand": {
-      "rotation": [3.19, -43, 4.68],
-      "translation": [-7.5, 8, 9],
-      "scale": [0.2, 0.2, 0.2]
+      "rotation": [3.19, -42, 4.68],
+      "translation": [0, 5.5, -1.5],
+      "scale": [0.8, 0.8, 0.8]
     },
     "ground": {
       "translation": [0, 1.75, -0.25],

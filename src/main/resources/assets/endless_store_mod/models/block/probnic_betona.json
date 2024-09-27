@@ -3,7 +3,7 @@
   "texture_size": [32, 32],
   "textures": {
     "0": "endless_store_mod:block/concreate",
-    "particle": "endless_store_mod:block/concreate"
+    "particle": "endless_store_mod:particle/placeholder_particle"
   },
   "elements": [
     {

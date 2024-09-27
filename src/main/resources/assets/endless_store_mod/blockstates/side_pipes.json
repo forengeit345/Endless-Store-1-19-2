@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "endless_store_mod:block/side_pipes",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/side_pipes"
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/side_pipes",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/side_pipes",
+      "y": 270
+    }
+  }
+}

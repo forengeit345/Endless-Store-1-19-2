@@ -46,6 +46,13 @@ public class EndlessStoreBlocks {
     public static final Block WALLPAPER_BLUE = registerBlock("wallpaper_blue", new RotateBlock(Block.Settings.of(Material.WOOD).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
     public static final Block METAL_GARAGE_DOOR = registerBlock("metal_garage_door", new RotateBlock(Block.Settings.of(Material.METAL).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
     public static final Block PATTERNED_CARPET= registerBlock("patterned_carpet", new CarpetCustom(Block.Settings.of(Material.WOOL).strength(6f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block LITERALLY_NOTHING = registerBlock("literally_nothing", new RotateBlock(Block.Settings.of(Material.METAL).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block CEILING_TILES_WHITE = registerBlock("ceiling_tiles_white", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block CEILING_TILES_WHITE_ANOTHER = registerBlock("ceiling_tiles_white_another", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block WALL_BLUE_TILES = registerBlock("wall_blue_tiles", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block TILES_WITH_BLACK_INCLUSIONS = registerBlock("tiles_with_black_conclusions", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+
+
 
     // Блоки с кастомным шейпом
     public static final Block METAL_PIPE = registerBlock("metal_pipe", new MetalPipe(Block.Settings.of(Material.METAL).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
@@ -86,6 +93,7 @@ public class EndlessStoreBlocks {
     public static final Block COIL_WIRES = registerBlock("coil_wires", new CoilWires(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
     public static final Block WOODEN_CHAIR = registerBlock("wooden_chair", new WoodenChair(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
     public static final Block WOODEN_TABLE = registerBlock("wooden_table", new WoodenTable(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block WOODEN_TABLE_LONG = registerBlock("wooden_table_long", new WoodenTableLong(Block.Settings.of(Material.WOOD).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
     public static final Block STORAGE_SHELVES = registerBlock("storage_shelves", new StorageShelves(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
     public static final Block SIDE_STORAGE_SHELVES = registerBlock("side_storage_shelves", new SideStorageShelves(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
     public static final Block SIDE_BEAMS = registerBlock("side_beams", new SideBeams(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
@@ -97,6 +105,12 @@ public class EndlessStoreBlocks {
     public static final Block RADIATOR_RIGHT_SIDE = registerBlock("radiator_right_side", new Radiator(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
     public static final Block RADIATOR_LEFT_SIDE = registerBlock("radiator_left_side", new Radiator(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
     public static final Block CEILING_GRID = registerBlock("ceiling_grid", new CeilingGrid(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block SQUARE_SHELF = registerBlock("square_shelf", new SquareShelf(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block SINK = registerBlock("sink", new Sink(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block SOCKET = registerBlock("socket", new Socket(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block SIDE_PIPES = registerBlock("side_pipes", new SidePipes(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block CEILING_PIPES = registerBlock("ceiling_pipes", new CeilingPipes(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+
 
 
     // Светяшки и всё что даёт хоть какой-то свет

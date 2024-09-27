@@ -2,7 +2,7 @@
   "credit": "Mikr",
   "textures": {
     "0": "endless_store_mod:towel_holder",
-    "particle": "endless_store_mod:towel_holder"
+    "particle": "endless_store_mod:particle/placeholder_particle"
   },
   "elements": [
     {

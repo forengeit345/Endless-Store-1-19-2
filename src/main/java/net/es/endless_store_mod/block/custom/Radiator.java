@@ -26,7 +26,7 @@ public class Radiator extends HorizontalFacingBlock {
     private static final VoxelShape SHAPE_N = Block.createCuboidShape(0, 0.5, 11, 16, 15.5, 16);
     private static final VoxelShape SHAPE_S = Block.createCuboidShape( 0, 0.5, 0, 16, 15.5, 5);
     private static final VoxelShape SHAPE_W = Block.createCuboidShape(11, 0.5, 0, 16, 15.5, 16);
-    private static final VoxelShape SHAPE_E = Block.createCuboidShape(0, 0.5, 0, 5, 15.5, 16);
+    private static final VoxelShape SHAPE_E = Block.createCuboidShape( 0, 0.5, 0, 5, 15.5, 16);
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return switch (state.get(FACING)) {

@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "endless_store_mod:concreate_block"
+              "name": "endless_store_mod:concreate"
             },
             {
               "type": "minecraft:item",

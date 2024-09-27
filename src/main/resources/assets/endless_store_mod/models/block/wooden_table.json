@@ -1,8 +1,8 @@
 {
   "credit": "Mikr",
   "textures": {
-    "0": "endless_store_mod:wooden_table",
-    "particle": "endless_store_mod:wooden_table"
+    "0": "endless_store_mod:wooden_universal",
+    "particle": "endless_store_mod:particle/placeholder_particle"
   },
   "elements": [
     {

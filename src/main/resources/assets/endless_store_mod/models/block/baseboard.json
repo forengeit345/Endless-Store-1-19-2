@@ -2,7 +2,7 @@
   "credit": "forengeit345",
   "textures": {
     "0": "endless_store_mod:baseboard",
-    "particle": "endless_store_mod:baseboard"
+    "particle": "endless_store_mod:particle/placeholder_particle"
   },
   "elements": [
     {

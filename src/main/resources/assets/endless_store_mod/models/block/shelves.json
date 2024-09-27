@@ -3,7 +3,7 @@
 	"textures": {
 		"0": "endless_store_mod:block/shelves2",
 		"1": "endless_store_mod:block/shelves1",
-		"particle": "endless_store_mod:block/shelves1"
+		"particle": "endless_store_mod:particle/placeholder_particle"
 	},
 	"elements": [
 		{

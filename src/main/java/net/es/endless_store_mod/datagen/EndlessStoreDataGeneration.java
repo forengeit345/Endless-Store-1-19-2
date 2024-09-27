@@ -7,5 +7,6 @@ public class EndlessStoreDataGeneration implements DataGeneratorEntrypoint {
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         fabricDataGenerator.addProvider(EndlessStoreModelProvider::new);
+        fabricDataGenerator.addProvider(EndlessStoreLootTableGenerator::new);
     }
 }

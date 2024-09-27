@@ -1,7 +1,21 @@
 {
   "variants": {
-    "": {
-      "model": "endless_store_mod:block/floor_tiles_multi_colored"
-    }
+    "": [
+      {
+        "model": "endless_store_mod:block/floor_tiles_multi_colored"
+      },
+      {
+        "model": "endless_store_mod:block/floor_tiles_multi_colored",
+        "y": 90
+      },
+      {
+        "model": "endless_store_mod:block/floor_tiles_multi_colored",
+        "y": 180
+      },
+      {
+        "model": "endless_store_mod:block/floor_tiles_multi_colored",
+        "y": 270
+      }
+    ]
   }
 }

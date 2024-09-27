@@ -18,8 +18,8 @@ public class EndlessStoreModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.LAMINATE_FLOORING_DARK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.LAMINATE_FLOORING_MANGROVE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.LAMINATE_FLOORING_WHITE);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.FLOOR_TILES_MULTI_COLORED);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.PLITKA_WATER);
+        blockStateModelGenerator.registerRotatable(EndlessStoreBlocks.FLOOR_TILES_MULTI_COLORED);
+        blockStateModelGenerator.registerRotatable(EndlessStoreBlocks.PLITKA_WATER);
         blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.CONCREATE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.DARK_CRACKED_CONCREATE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.DARK_CONCREATE);
@@ -37,6 +37,11 @@ public class EndlessStoreModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.WALLPAPER_WHITE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.WALLPAPER_BLUE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.METAL_GARAGE_DOOR);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.LITERALLY_NOTHING);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.CEILING_TILES_WHITE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.CEILING_TILES_WHITE_ANOTHER);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.WALL_BLUE_TILES);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.TILES_WITH_BLACK_INCLUSIONS);
     }
 
     @Override
