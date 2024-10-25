@@ -1,11 +1,11 @@
 {
   "type": "minecraft:jigsaw",
-  "start_pool": "endless_store_mod:run_down_house/start_pool",
-  "size": 1,
+  "start_pool": "endless_store_mod:big_storage_shelves/main_road",
+  "size": 7,
   "max_distance_from_center": 80,
-  "biomes": "#endless_store_mod:has_structure/json_only_house_biomes",
+  "biomes": "#endless_store_mod:has_structure/main_road",
   "step": "surface_structures",
-  "terrain_adaptation": "beard_thin",
+  "terrain_adaptation": "none",
   "start_height": {
     "absolute": 0
   },
