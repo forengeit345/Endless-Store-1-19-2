@@ -1,0 +1,27 @@
+{
+  "temperature": 0,
+  "downfall": 0,
+  "precipitation": "none",
+  "temperature_modifier": "none",
+  "effects": {
+    "sky_color": 16249843,
+    "fog_color": 14736607,
+    "water_color": 9349545,
+    "water_fog_color": 12371656
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "endless_store_mod:employee",
+        "weight": 10,
+        "minCount": 0,
+        "maxCount": 1
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": "minecraft:cave"
+  },
+  "features": []
+}

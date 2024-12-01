@@ -1,9 +1,9 @@
 {
   "type": "minecraft:jigsaw",
-  "start_pool": "endless_store_mod:run_down_house/start_pool",
-  "size": 1,
-  "max_distance_from_center": 80,
-  "biomes": "#endless_store_mod:has_structure/json_only_house_biomes",
+  "start_pool": "endless_store_mod:furniture_section/crossroad_shaped_middle_road_box",
+  "size": 7,
+  "max_distance_from_center": 116,
+  "biomes": "#endless_store_mod:has_structure/crossroad_shaped_middle_road_box",
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
   "start_height": {

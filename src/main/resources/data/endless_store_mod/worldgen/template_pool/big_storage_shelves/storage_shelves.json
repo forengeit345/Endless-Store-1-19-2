@@ -1,79 +1,294 @@
 {
-  "name": "endless_store_mod:big_storage_shelves/road",
+  "name": "endless_store_mod:big_storage_shelves/storage_shelves",
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 1,
+      "weight": 6,
       "element": {
-        "location": "endless_store_mod:big_storage_shelves_1",
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_a1",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 1,
+      "weight": 6,
       "element": {
-        "location": "endless_store_mod:big_storage_shelves_2",
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_a2",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 1,
+      "weight": 6,
       "element": {
-        "location": "endless_store_mod:big_storage_shelves_3",
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_a3",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 1,
+      "weight": 6,
       "element": {
-        "location": "endless_store_mod:big_storage_shelves_4",
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_a4",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 1,
+      "weight": 6,
       "element": {
-        "location": "endless_store_mod:big_storage_shelves_5",
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_a5",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 1,
+      "weight": 6,
       "element": {
-        "location": "endless_store_mod:big_storage_shelves_6",
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_a6",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 1,
+      "weight": 6,
       "element": {
-        "location": "endless_store_mod:big_storage_shelves_7",
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_a7",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 1,
+      "weight": 6,
       "element": {
-        "location": "endless_store_mod:big_storage_shelves_8",
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_a8",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_b1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_b2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_b3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_b4",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_b5",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_b6",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_b7",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_b8",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_c1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_c2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_c3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_c4",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_c5",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_c6",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_c7",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_c8",
+                "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_d1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_d2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_d3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_d4",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_d5",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_d6",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_d7",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/storage_shelves/big_storage_shelves_d8",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     }
-
   ]
 }

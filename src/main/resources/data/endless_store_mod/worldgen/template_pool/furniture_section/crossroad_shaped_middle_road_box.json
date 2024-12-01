@@ -1,11 +1,11 @@
 {
-  "name": "endless_store_mod:run_down_house/start_pool",
+  "name": "endless_store_mod:furniture_section/crossroad_shaped_middle_road_box",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "weight": 1,
       "element": {
-        "location": "endless_store_mod:run_down_house_left_side",
+        "location": "endless_store_mod:crossroad_shaped_middle_road_box",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

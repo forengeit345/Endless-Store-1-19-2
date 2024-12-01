@@ -1,0 +1,60 @@
+{
+  "name": "endless_store_mod:big_storage_shelves/decor_on_floor",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/big_storage_shelves/decor_on_floor/pallets_3x3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/decor_on_floor/pallets_2x3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/decor_on_floor/pallets_2x5",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/decor_on_floor/cargo_rolley_two_handles",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/decor_on_floor/cargo_rolley_two_handles_2x1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "endless_store_mod:big_storage_shelves/decor_on_floor/cargo_rolley",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

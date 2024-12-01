@@ -3,6 +3,7 @@
   "generator": {
     "type": "minecraft:noise",
     "settings": {
+      "name": "endless_store_mod:esdim",
       "sea_level": 63,
       "disable_mob_generation": true,
       "aquifers_enabled": false,
@@ -12,10 +13,7 @@
         "Name": "endless_store_mod:concreate"
       },
       "default_fluid": {
-        "Name": "endless_store_mod:concreate",
-        "Properties": {
-          "level": "0"
-        }
+        "Name": "endless_store_mod:concreate"
       },
       "noise": {
         "min_y": 0,
@@ -28,12 +26,20 @@
         "fluid_level_floodedness": 0,
         "fluid_level_spread": 0,
         "lava": 0,
-        "temperature": 0.1,
+        "temperature": {
+          "type": "minecraft:shifted_noise",
+          "noise": "minecraft:cave_layer",
+          "xz_scale": 0.25,
+          "y_scale": 0,
+          "shift_x": "minecraft:shift_x",
+          "shift_y": 0,
+          "shift_z": "minecraft:shift_z"
+        },
         "vegetation": 0,
         "continents": 0,
-        "erosion": 0.1,
-        "depth": 0.1,
-        "ridges": 0.1,
+        "erosion": 0,
+        "depth": 0,
+        "ridges": 0,
         "initial_density_without_jaggedness": 0,
         "final_density": {
           "type": "minecraft:y_clamped_gradient",
@@ -56,17 +62,38 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "endless_store_mod:es_test",
+          "biome": "endless_store_mod:es_test_space",
           "parameters": {
-            "temperature": 0,
+            "temperature": 0.41,
             "humidity": 0,
             "continentalness": 0,
             "erosion": 0,
             "weirdness": 0,
-            "depth": [
-              0,
-              0
-            ],
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "endless_store_mod:es_test_box",
+          "parameters": {
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0,
+            "depth": 0,
+            "offset": 0,
+            "temperature": -0.8,
+            "weirdness": 0
+          }
+        },
+        {
+          "biome": "endless_store_mod:es_test",
+          "parameters": {
+            "temperature": 0.6,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
             "offset": 0
           }
         }
