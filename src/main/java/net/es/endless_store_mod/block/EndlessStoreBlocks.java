@@ -110,13 +110,16 @@ public class EndlessStoreBlocks {
     public static final Block SOCKET = registerBlock("socket", new Socket(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
     public static final Block SIDE_PIPES = registerBlock("side_pipes", new SidePipes(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
     public static final Block CEILING_PIPES = registerBlock("ceiling_pipes", new CeilingPipes(Block.Settings.of(Material.METAL).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
-
+    public static final Block PEDESTAL_ALTEA = registerBlock("pedestal_altea", new PedestalAltea(Block.Settings.of(Material.WOOD).strength(2f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block METAL_CLOSET = registerBlock("metal_closet", new MetalCloset(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque()), EndlessStoreItemGroup.ENDLESS_MOD);
 
 
     // Светяшки и всё что даёт хоть какой-то свет
-    public static final Block LAMP = registerBlock("lamp", new LampProp(Block.Settings.of(Material.WOOD).strength(5f).requiresTool().nonOpaque().luminance(state -> state.get(LampProp.LIT) ? 10 : 0)), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block LAMP_HIGH = registerBlock("lamp_high", new LampHighProp(Block.Settings.of(Material.WOOD).strength(5f).requiresTool().nonOpaque().luminance(state -> state.get(LampProp.LIT) ? 14 : 0)), EndlessStoreItemGroup.ENDLESS_MOD);
-    public static final Block LAMP_LED = registerBlock("lamp_led", new LampLED(Block.Settings.of(Material.WOOD).strength(5f).requiresTool().nonOpaque().luminance(state -> state.get(LampProp.LIT) ? 14 : 0)), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block LAMP = registerBlock("lamp", new LampProp(Block.Settings.of(Material.METAL).strength(5f).requiresTool().nonOpaque().luminance(state -> state.get(LampProp.LIT) ? 10 : 0)), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block LAMP_HIGH = registerBlock("lamp_high", new LampHighProp(Block.Settings.of(Material.METAL).strength(5f).requiresTool().nonOpaque().luminance(state -> state.get(LampProp.LIT) ? 14 : 0)), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block LAMP_LED = registerBlock("lamp_led", new LampLED(Block.Settings.of(Material.METAL).strength(5f).requiresTool().nonOpaque().luminance(state -> state.get(LampProp.LIT) ? 14 : 0)), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block LAMPSHADE = registerBlock("lampshade", new Lampshade(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque().luminance(state -> state.get(LampProp.LIT) ? 9 : 0)), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block LIGHT_BULB = registerBlock("light_bulb", new LightBulb(Block.Settings.of(Material.METAL).strength(2f).requiresTool().nonOpaque().luminance(state -> state.get(LampProp.LIT) ? 11 : 0)), EndlessStoreItemGroup.ENDLESS_MOD);
     
 
     private static Block registerBlock(String name, Block block, ItemGroup tab) {

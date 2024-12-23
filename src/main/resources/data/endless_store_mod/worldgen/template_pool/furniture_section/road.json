@@ -30,6 +30,15 @@
       }
     },
     {
+      "weight": 2,
+      "element": {
+        "location": "endless_store_mod:furniture_section/roads/l_shaped_long_road",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
       "weight": 3,
       "element": {
         "location": "endless_store_mod:furniture_section/roads/l_shaped_middle_road_another",
@@ -51,6 +60,15 @@
       "weight": 2,
       "element": {
         "location": "endless_store_mod:furniture_section/roads/line_left_shaped_short_road",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "endless_store_mod:furniture_section/roads/line_shaped_very_long_road",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

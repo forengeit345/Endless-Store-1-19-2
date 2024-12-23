@@ -89,6 +89,8 @@
   "block.endless_store_mod.socket": "Розетка",
   "block.endless_store_mod.side_pipes": "Боковые трубы",
   "block.endless_store_mod.ceiling_pipes": "Хз какие трубы, может быть верховые трубы или потолочные",
+  "block.endless_store_mod.pedestal_altea": "Тумба altea",
+  "block.endless_store_mod.metal_closet": "Металлический шкафчик",
 
   "item.endless_store_mod.employee_spawn_egg": "Яйцо призыва работника",
   "entity.endless_store_mod.employee": "Работник",
@@ -96,6 +98,8 @@
   "block.endless_store_mod.lamp": "Торшер",
   "block.endless_store_mod.lamp_high": "Высокий торшер",
   "block.endless_store_mod.lamp_led": "LED лампа",
+  "block.endless_store_mod.lampshade": "Лампочка с абажуром",
+  "block.endless_store_mod.light_bulb": "Лампочка",
 
   "itemGroup.endless_store_mod.concreate_crumbs": "Endless Store Вкладка"
 }

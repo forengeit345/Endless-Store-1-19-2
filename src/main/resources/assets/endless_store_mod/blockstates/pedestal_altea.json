@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "endless_store_mod:block/pedestal_altea",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/pedestal_altea",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/pedestal_altea",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/pedestal_altea",
+      "y": 360
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "endless_store_mod:block/light_bulb"
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/light_bulb",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/light_bulb",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/light_bulb",
+      "y": 90
+    }
+  }
+}

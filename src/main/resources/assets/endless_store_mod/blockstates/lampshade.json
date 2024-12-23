@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "endless_store_mod:block/lampshade"
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/lampshade",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/lampshade",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/lampshade",
+      "y": 90
+    }
+  }
+}

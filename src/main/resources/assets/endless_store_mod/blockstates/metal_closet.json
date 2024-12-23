@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "endless_store_mod:block/metal_closet",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "endless_store_mod:block/metal_closet",
+      "y": 270
+    },
+    "facing=west": {
+      "model": "endless_store_mod:block/metal_closet"
+    },
+    "facing=east": {
+      "model": "endless_store_mod:block/metal_closet",
+      "y": 180
+    }
+  }
+}
