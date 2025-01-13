@@ -1,6 +1,8 @@
 package net.es.endless_store_mod;
 
 import net.es.endless_store_mod.world.dimension.EndlessStoreDimension;
+import net.es.endless_store_mod.world.feature.EndlessStoreConfiguredFeatures;
+import net.es.endless_store_mod.world.gen.EndlessStoreGeodeGeneration;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.es.endless_store_mod.block.EndlessStoreBlocks;
 import net.es.endless_store_mod.entity.EndlessStoreEntities;
@@ -17,12 +19,16 @@ public class EndlessStoreMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		EndlessStoreConfiguredFeatures.registerConfiguredFeatures();
+
 		EndlessStoreItems.registerModItems();
 		EndlessStoreBlocks.registerModBlocks();
 
 		GeckoLib.initialize();
 
 		FabricDefaultAttributeRegistry.register(EndlessStoreEntities.EMPLOYEE, EmployeeEntity.setAttributes());
+
+		EndlessStoreGeodeGeneration.generateGeodes();
 
 		EndlessStoreDimension.register();
 	}
