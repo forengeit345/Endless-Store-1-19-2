@@ -1,7 +1,9 @@
 package net.es.endless_store_mod;
 
+import net.es.endless_store_mod.registry.EndlessStoreBiomeModificationse;
+import net.es.endless_store_mod.registry.EndlessStoreFeatures;
 import net.es.endless_store_mod.world.dimension.EndlessStoreDimension;
-import net.es.endless_store_mod.world.feature.EndlessStoreConfiguredFeatures;
+import net.es.endless_store_mod.world.features.EndlessStoreConfiguredFeatures;
 import net.es.endless_store_mod.world.gen.EndlessStoreGeodeGeneration;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.es.endless_store_mod.block.EndlessStoreBlocks;
@@ -29,6 +31,8 @@ public class EndlessStoreMod implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(EndlessStoreEntities.EMPLOYEE, EmployeeEntity.setAttributes());
 
 		EndlessStoreGeodeGeneration.generateGeodes();
+		EndlessStoreBiomeModificationse.register();
+		EndlessStoreFeatures.registerFeatures();
 
 		EndlessStoreDimension.register();
 	}

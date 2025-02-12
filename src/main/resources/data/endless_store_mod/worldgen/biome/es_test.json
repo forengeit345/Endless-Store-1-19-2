@@ -23,5 +23,17 @@
   "carvers": {
     "air": "minecraft:cave"
   },
-  "features": []
+  "features": [
+    "endless_store_mod:concreate_geode",
+    "minecraft:amethyst_geode",
+    "minecraft:ore_dirt",
+    "minecraft:ore_gravel",
+    "minecraft:ore_granite_upper",
+    "minecraft:ore_granite_lower",
+    "minecraft:ore_diorite_upper",
+    "minecraft:ore_diorite_lower",
+    "minecraft:ore_andesite_upper",
+    "minecraft:ore_andesite_lower",
+    "minecraft:ore_tuff"
+  ]
 }
