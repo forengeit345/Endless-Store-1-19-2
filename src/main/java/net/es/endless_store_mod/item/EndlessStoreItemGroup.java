@@ -8,5 +8,5 @@ import net.minecraft.util.Identifier;
 
 public class EndlessStoreItemGroup {
     public static final ItemGroup ENDLESS_MOD = FabricItemGroupBuilder.build(
-            new Identifier(EndlessStoreMod.MOD_ID, "concreate_crumbs"), () -> new ItemStack(EndlessStoreItems.CONCREATE_CRUMBS));
+            new Identifier(EndlessStoreMod.MOD_ID, "concrete_crumbs"), () -> new ItemStack(EndlessStoreItems.CONCRETE_CRUMBS));
 }

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "endless_store_mod:block/dark_overgrown_concreate"
-  }
-}

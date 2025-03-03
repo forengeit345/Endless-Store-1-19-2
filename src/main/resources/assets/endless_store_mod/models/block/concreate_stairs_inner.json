@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "endless_store_mod:block/concreate",
-    "top": "endless_store_mod:block/concreate",
-    "side": "endless_store_mod:block/concreate"
-  }
-}

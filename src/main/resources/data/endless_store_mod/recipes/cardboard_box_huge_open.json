@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "endless_store_mod:piece_of_cardboard"
+    }
+  },
+  "result":{
+    "item": "endless_store_mod:cardboard_box_huge_open"
+  }
+}

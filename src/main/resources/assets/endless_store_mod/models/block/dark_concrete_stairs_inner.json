@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "endless_store_mod:block/dark_concrete",
+    "top": "endless_store_mod:block/dark_concrete",
+    "side": "endless_store_mod:block/dark_concrete"
+  }
+}

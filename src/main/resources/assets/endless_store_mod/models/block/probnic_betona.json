@@ -2,7 +2,7 @@
   "credit": "Discord: nirix_  /   Nirix#1017   ||  Github : https://github.com/Nirix121 ",
   "texture_size": [32, 32],
   "textures": {
-    "0": "endless_store_mod:block/concreate",
+    "0": "endless_store_mod:block/concrete",
     "particle": "endless_store_mod:particle/placeholder_particle"
   },
   "elements": [
