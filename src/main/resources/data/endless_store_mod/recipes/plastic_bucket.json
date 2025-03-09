@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "endless_store_mod:trash_plastic"
+    }
+  },
+  "result":{
+    "item": "endless_store_mod:plastic_bucket"
+  }
+}

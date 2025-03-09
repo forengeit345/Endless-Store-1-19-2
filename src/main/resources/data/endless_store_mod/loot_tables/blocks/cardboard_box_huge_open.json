@@ -36,6 +36,14 @@
                 },
                 {
                   "function": "minecraft:explosion_decay"
+                },
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 3,
+                    "max": 5,
+                    "type": "minecraft:uniform"
+                  }
                 }
               ],
               "name": "endless_store_mod:piece_of_cardboard"

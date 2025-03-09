@@ -1,0 +1,27 @@
+{
+  "feature": "endless_store_mod:hills_of_boxes",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 2
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": {
+        "type": "minecraft:biased_to_bottom",
+        "value": {
+          "min_inclusive": 1,
+          "max_inclusive": 16
+        }
+      },
+      "y_spread": 0
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

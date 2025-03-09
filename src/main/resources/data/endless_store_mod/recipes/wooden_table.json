@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "*#*",
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "endless_store_mod:wooden_board"
+    },
+    "*": {
+      "item": "endless_store_mod:nails"
+    }
+  },
+  "result":{
+    "item": "endless_store_mod:wooden_chair"
+  }
+}

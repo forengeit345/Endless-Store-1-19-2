@@ -1,9 +1,6 @@
 package net.es.endless_store_mod.block.custom;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.HorizontalFacingBlock;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
@@ -16,7 +13,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
 
-public class CardboardBoxLarge extends HorizontalFacingBlock {
+public class CardboardBoxLarge extends FallingBlock {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
     public CardboardBoxLarge(Settings settings) {

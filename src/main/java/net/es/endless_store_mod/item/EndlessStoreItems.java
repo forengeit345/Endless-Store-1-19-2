@@ -17,7 +17,11 @@ public class EndlessStoreItems {
     public static final Item NAILS = registerItem("nails", new Item(new FabricItemSettings().group(EndlessStoreItemGroup.ENDLESS_MOD)));
     public static final Item BOLTS = registerItem("bolts", new Item(new FabricItemSettings().group(EndlessStoreItemGroup.ENDLESS_MOD)));
     public static final Item METAL_PLATES = registerItem("metal_plates", new Item(new FabricItemSettings().group(EndlessStoreItemGroup.ENDLESS_MOD)));
-//    public static final Item CONCRETE_BRICK = registerItem("concrete_brick", new Item(new FabricItemSettings().group(EndlessStoreItemGroup.ENDLESS_MOD)));
+    public static final Item CONCRETE_BRICK = registerItem("concrete_brick", new Item(new FabricItemSettings().group(EndlessStoreItemGroup.ENDLESS_MOD)));
+    public static final Item SCRAP = registerItem("scrap", new Item(new FabricItemSettings().group(EndlessStoreItemGroup.ENDLESS_MOD)));
+    public static final Item MOLTEN_SCRAP = registerItem("molten_scrap", new Item(new FabricItemSettings().group(EndlessStoreItemGroup.ENDLESS_MOD)));
+    public static final Item PLASTIC_BUCKET = registerItem("plastic_bucket", new Item(new FabricItemSettings().group(EndlessStoreItemGroup.ENDLESS_MOD)));
+    public static final Item TRASH_PLASTIC = registerItem("trash_plastic", new Item(new FabricItemSettings().group(EndlessStoreItemGroup.ENDLESS_MOD)));
     public static final Item BREPSI = registerItem("brepsi", new Item(new FabricItemSettings().group(EndlessStoreItemGroup.ENDLESS_MOD)));
 
 

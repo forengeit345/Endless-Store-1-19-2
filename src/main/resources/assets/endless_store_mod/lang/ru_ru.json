@@ -6,6 +6,11 @@
   "item.endless_store_mod.nails": "Гвозди",
   "item.endless_store_mod.bolts": "Болты",
   "item.endless_store_mod.metal_plates": "Пластины",
+  "item.endless_store_mod.concrete_brick": "Бетонный кирпич",
+  "item.endless_store_mod.scrap": "Металлолом",
+  "item.endless_store_mod.molten_scrap": "Переплавленный металлолом",
+  "item.endless_store_mod.plastic_bucket": "Пластиковое ведро",
+  "item.endless_store_mod.trash_plastic": "Пластиковый мусор",
   "item.endless_store_mod.brepsi": "Brepsi",
 
   "block.endless_store_mod.laminate_flooring_white": "Белый ламинат",

@@ -4,18 +4,18 @@ import net.es.endless_store_mod.block.EndlessStoreBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.noise.OctaveSimplexNoiseSampler;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.Heightmap;
 import net.minecraft.world.StructureWorldAccess;
 import net.minecraft.world.gen.feature.DefaultFeatureConfig;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.util.FeatureContext;
-import net.minecraft.util.math.random.Random;
 
 import java.util.Collections;
 import java.util.List;
 
 
-public class SinWaveHillFeature extends Feature<DefaultFeatureConfig> {
+public class HillsOfBoxes extends Feature<DefaultFeatureConfig> {
     private final OctaveSimplexNoiseSampler noiseSampler;
 
     private static final List<Block> BASE_BLOCKS = List.of(
@@ -23,7 +23,7 @@ public class SinWaveHillFeature extends Feature<DefaultFeatureConfig> {
             EndlessStoreBlocks.CONCRETE
     );
 
-    private static final float SECONDARY_BLOCK_CHANCE = 0.2F; // 20% шанс добавления
+    private static final float SECONDARY_BLOCK_CHANCE = 0.4F; // 20% шанс добавления
     private static final List<Block> SURFACE_BLOCKS = List.of(
             EndlessStoreBlocks.CARDBOARD_BOX,
             EndlessStoreBlocks.CARDBOARD_BOX_OPEN,
@@ -36,7 +36,7 @@ public class SinWaveHillFeature extends Feature<DefaultFeatureConfig> {
 
     private static final int CHECK_DEPTH = 5;
 
-    public SinWaveHillFeature() {
+    public HillsOfBoxes() {
         super(DefaultFeatureConfig.CODEC);
         this.noiseSampler = new OctaveSimplexNoiseSampler(
                 Random.create(), Collections.singletonList(2)
@@ -49,9 +49,9 @@ public class SinWaveHillFeature extends Feature<DefaultFeatureConfig> {
         BlockPos origin = context.getOrigin();
         Random random = context.getRandom();
 
-        int radius = 13;
-        double maxHeight = 10.0;
-        double baseWidth = 0.055;
+        int radius = 11;
+        double maxHeight = 7.0;
+        double baseWidth = 0.155;
 
         for (int x = -radius; x <= radius; x++) {
             for (int z = -radius; z <= radius; z++) {
