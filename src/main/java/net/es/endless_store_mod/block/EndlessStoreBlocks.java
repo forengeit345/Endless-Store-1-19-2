@@ -51,6 +51,9 @@ public class EndlessStoreBlocks {
     public static final Block CEILING_TILES_WHITE_ANOTHER = registerBlock("ceiling_tiles_white_another", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
     public static final Block WALL_BLUE_TILES = registerBlock("wall_blue_tiles", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
     public static final Block TILES_WITH_BLACK_INCLUSIONS = registerBlock("tiles_with_black_conclusions", new RotateBlock(Block.Settings.of(Material.STONE).strength(4f).requiresTool()), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block PLASTIC_GARBAGE_COLORED = registerBlock("plastic_garbage_colored", new RotateBlock(Block.Settings.of(Material.WOOD).strength(1f)), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block PLASTIC_GARBAGE_GREY = registerBlock("plastic_garbage_grey", new RotateBlock(Block.Settings.of(Material.WOOD).strength(1f)), EndlessStoreItemGroup.ENDLESS_MOD);
+    public static final Block PLASTIC_GARBAGE_BLUE = registerBlock("plastic_garbage_blue", new RotateBlock(Block.Settings.of(Material.WOOD).strength(1f)), EndlessStoreItemGroup.ENDLESS_MOD);
 
 
 

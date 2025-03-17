@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:jigsaw",
+  "start_pool": "endless_store_mod:cardboard_wastelands/advertising_banners",
+  "size": 1,
+  "max_distance_from_center": 50,
+  "biomes": "#endless_store_mod:has_structure/advertising_banners",
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_thin",
+  "start_height": {
+    "absolute": 1
+  },
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "use_expansion_hack": false,
+  "spawn_overrides": {}
+}

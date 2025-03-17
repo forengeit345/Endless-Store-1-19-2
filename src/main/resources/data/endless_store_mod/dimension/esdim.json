@@ -64,7 +64,7 @@
         {
           "biome": "endless_store_mod:es_test_space",
           "parameters": {
-            "temperature": 0.41,
+            "temperature": 0.21,
             "humidity": 0,
             "continentalness": 0,
             "erosion": 0,
@@ -81,7 +81,7 @@
             "erosion": 0,
             "depth": 0,
             "offset": 0,
-            "temperature": -0.8,
+            "temperature": -0.5,
             "weirdness": 0
           }
         },
@@ -89,6 +89,18 @@
           "biome": "endless_store_mod:es_test",
           "parameters": {
             "temperature": 0.6,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "endless_store_mod:trash_landfill",
+          "parameters": {
+            "temperature": 0.55,
             "humidity": 0,
             "continentalness": 0,
             "erosion": 0,

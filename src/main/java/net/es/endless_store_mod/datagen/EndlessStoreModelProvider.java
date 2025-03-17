@@ -42,6 +42,9 @@ public class EndlessStoreModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.CEILING_TILES_WHITE_ANOTHER);
         blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.WALL_BLUE_TILES);
         blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.TILES_WITH_BLACK_INCLUSIONS);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.PLASTIC_GARBAGE_COLORED);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.PLASTIC_GARBAGE_GREY);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(EndlessStoreBlocks.PLASTIC_GARBAGE_BLUE);
     }
 
     @Override
